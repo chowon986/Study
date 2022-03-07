@@ -8,10 +8,12 @@ using namespace std;
 
 int main()
 {
+
     Date birth(2014, 3, 20); // 2014년 3월 20일
     Date independenceDay("1945/8/15"); // 1945년 8월 15일
     independenceDay.Show();
     cout << birth.getYear() << ',' << birth.getMonth() << ',' << birth.getDay() << endl;
+
 }
 
 // 힌트 : <string> 헤더 파일의 stoi() 함수를 이용하면 string의 문자열을 숫자로 변환할 수 있다.

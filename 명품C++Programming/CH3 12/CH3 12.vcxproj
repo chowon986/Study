@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e72398d6-a428-456a-ae84-9789f49d2c3c}</ProjectGuid>
-    <RootNamespace>CH308</RootNamespace>
+    <ProjectGuid>{dbb3a6c0-fefc-48f4-adcc-9816ffa94b94}</ProjectGuid>
+    <RootNamespace>CH312</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="CH3 08.cpp" />
-    <ClCompile Include="Integer.cpp" />
+    <ClCompile Include="CH3 12.cpp" />
+    <ClCompile Include="Ram.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Integer.h" />
+    <ClInclude Include="Ram.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

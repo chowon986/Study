@@ -1,5 +1,5 @@
 #pragma once
-class Random
+class EvenRandom
 {
 public:
 	int n;

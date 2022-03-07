@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <string>
+#include "Integer.h"
 using namespace std;
 
 int main()

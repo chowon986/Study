@@ -1,4 +1,5 @@
 #include "Date.h"
+using namespace std;
 
 Date::Date(int _year, int _month, int _day)
 {
@@ -7,14 +8,61 @@ Date::Date(int _year, int _month, int _day)
 	Day = _day;
 }
 
-Date::Date(std::string a)
+Date::Date(string _day)
 {
-	A = a;
+	Day2 = _day;
 }
 
-int Date::Show()
+void Date::Show()
 {
-	return (int)(Day);
+	int len = Day2.length();
+	int count = 0;
+	int count2 = 0;
+	int a = 0;
+	for (int i = 0; i < len; i++)
+	{
+		if (Day2[i] != '/')
+		{
+			count++;
+		}
+		else if (Day2[i] == '/')
+		{
+			break;
+		}
+	}
+
+	for (int i = 0; i < count; i++)
+	{
+		std::cout << Day2[i];
+	}
+	std::cout << "³â";
+	
+	count2 = count;
+	for (int i = ++count; i < len; i++)
+	{
+		if (Day2[i] != '/')
+		{
+			count++;
+		}
+		else if (Day2[i] == '/')
+		{
+			break;
+		}
+	}
+
+	for (int i = ++count2; i < count; i++)
+	{
+		std::cout << Day2[i];
+	}
+
+	std::cout << "¿ù";
+
+	for (int i = ++count; i < len; i++)
+	{
+		std::cout << Day2[i];
+	}
+
+	std::cout << "ÀÏ" << endl;
 }
 
 int Date::getYear()

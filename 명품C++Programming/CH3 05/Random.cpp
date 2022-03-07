@@ -2,21 +2,14 @@
 #include <cstdlib>
 #include <ctime>
 
-Random::Random()
-{
-}
-
 int Random::next()
 {
-	srand((unsigned)time(0));
+	n = rand();
+	return n;
 }
 
 int Random::nextInRange(int a, int b)
 {
-	srand((unsigned)time(0));
-	int n = rand();
-	if (n >= a && n <= b)
-	{
+	n = rand()%(b-a+1)+a;
 		return n;
-	}
 }

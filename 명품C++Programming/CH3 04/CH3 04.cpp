@@ -11,6 +11,7 @@ using namespace std;
 
 int main()
 {
+
     CoffeeMachine java(5, 10, 3); // 커피 5 물 10 설탕 3으로 초기화
     java.drinkEspresso();
     java.show();
@@ -20,4 +21,5 @@ int main()
     java.show();
     java.fill();
     java.show();
+
 }
