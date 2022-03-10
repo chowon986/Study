@@ -28,6 +28,7 @@ int main()
             cin >> b;
            if(a.at(4)==b.at(0))
         }
+
         delete name;
     }
     

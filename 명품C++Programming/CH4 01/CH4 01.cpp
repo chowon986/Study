@@ -1,7 +1,36 @@
 ﻿#include <iostream>
-#include "Color.h"
 using namespace std;
 
+class Color
+{
+private:
+	int red;
+	int green;
+	int blue;
+
+public:
+	Color()
+	{
+		red = green = blue = 0;
+	}
+	Color(int r, int g, int b)
+	{
+		red = r;
+		green = g;
+		blue = b;
+	}
+	void setColor(int r, int g, int b)
+	{
+		red = r;
+		green = g;
+		blue = b;
+	}
+	void show()
+	{
+		cout << red << ' ' << green << ' ' << blue << endl;
+	}
+
+};
 int main()
 {
 	Color scrrenColor(255, 0, 0);
@@ -13,11 +42,14 @@ int main()
 
 	// (5) p와 setColor()를 이용하여 colors[0], colors[1], colors[2]가
 	// 각각 빨강, 초록, 파랑색을 가지도록 코드 작성
-	void Color::setColor(int r, int g, int b)
+	p[0].setColor(255, 0, 0);
+	p[1].setColor(0, 255, 0);
+	p[2].setColor(0, 0, 255);
+
+	// (6) p와 show()를 이용하여 colors의 배열의 모든 객체의 색 출력. for 문 이용
+	for (int i = 0; i < 3; i++)
 	{
-		red = r;
-		green = g;
-		blue = b;
+		p[i].show();
 	}
 
 }
