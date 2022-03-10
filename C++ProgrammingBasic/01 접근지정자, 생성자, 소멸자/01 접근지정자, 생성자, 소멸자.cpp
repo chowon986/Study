@@ -47,6 +47,7 @@ public:
 
 int main()
 {
+
 	Person p;
 	Person arr1[5]; // 1번 5회
 	Person arr2[5] = { {1,2},{1,1} }; // 2번 2회, 1번 3회
