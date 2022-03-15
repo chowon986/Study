@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 Hello World", "01 Hello World\01 Hello World.vcxproj", "{540D1722-0372-40A1-B182-FD426EB2CD5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 입출력과 사칙연산", "01 입출력과 사칙연산", "{0CD0A625-0EB1-4921-AB74-ABDF066CB15D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 We love kriii", "02 We love kriii\02 We love kriii.vcxproj", "{8C2A7427-302E-4347-A44D-64E19A82AC71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Debug|x64.ActiveCfg = Debug|x64
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Debug|x64.Build.0 = Debug|x64
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Debug|x86.ActiveCfg = Debug|Win32
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Debug|x86.Build.0 = Debug|Win32
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Release|x64.ActiveCfg = Release|x64
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Release|x64.Build.0 = Release|x64
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Release|x86.ActiveCfg = Release|Win32
+		{540D1722-0372-40A1-B182-FD426EB2CD5E}.Release|x86.Build.0 = Release|Win32
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Debug|x64.ActiveCfg = Debug|x64
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Debug|x64.Build.0 = Debug|x64
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Debug|x86.ActiveCfg = Debug|Win32
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Debug|x86.Build.0 = Debug|Win32
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Release|x64.ActiveCfg = Release|x64
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Release|x64.Build.0 = Release|x64
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Release|x86.ActiveCfg = Release|Win32
+		{8C2A7427-302E-4347-A44D-64E19A82AC71}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{540D1722-0372-40A1-B182-FD426EB2CD5E} = {0CD0A625-0EB1-4921-AB74-ABDF066CB15D}
+		{8C2A7427-302E-4347-A44D-64E19A82AC71} = {0CD0A625-0EB1-4921-AB74-ABDF066CB15D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
+	EndGlobalSection
+EndGlobal
