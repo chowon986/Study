@@ -33,9 +33,9 @@ public:
 };
 int main()
 {
-	Color scrrenColor(255, 0, 0);
+	Color screenColor(255, 0, 0);
 	Color* p;
-	p = &scrrenColor; // (1) p가 scrrenColor의 주소를 가지도록 코드 작성
+	p = &screenColor; // (1) p가 scrrenColor의 주소를 가지도록 코드 작성
 	p->show();        // (2) p와 show()를 이용하여 screenColor 색 출력
 	Color Colors[3];  // (3) Color의 일차원 배열 colors 선언. 원소는 3개
 	p = Colors;		  // (4) p가 colors 배열을 가리키도록 코드 작성
