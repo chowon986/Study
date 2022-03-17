@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9bbf4257-4597-43d4-8863-568e61f6fb77}</ProjectGuid>
+    <ProjectGuid>{a4da9ab4-fb0d-4a5b-a390-6cf82f7aa2d7}</ProjectGuid>
     <RootNamespace>한글끝말잇기게임</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="한글 끝말잇기 게임.cpp" />
+    <ClCompile Include="한글끝말잇기 게임.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
