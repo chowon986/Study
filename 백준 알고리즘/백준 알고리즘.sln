@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "포도주 시식", "포도�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "정수 삼각형", "정수 삼각형\정수 삼각형.vcxproj", "{47FB8E40-DB2D-4B68-B1D6-8B3876899645}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "가장 큰 증가하는 부분 수열", "가장 큰 증가하는 부분 수열\가장 큰 증가하는 부분 수열.vcxproj", "{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -225,6 +227,14 @@ Global
 		{47FB8E40-DB2D-4B68-B1D6-8B3876899645}.Release|x64.Build.0 = Release|x64
 		{47FB8E40-DB2D-4B68-B1D6-8B3876899645}.Release|x86.ActiveCfg = Release|Win32
 		{47FB8E40-DB2D-4B68-B1D6-8B3876899645}.Release|x86.Build.0 = Release|Win32
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Debug|x64.ActiveCfg = Debug|x64
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Debug|x64.Build.0 = Debug|x64
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Debug|x86.ActiveCfg = Debug|Win32
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Debug|x86.Build.0 = Debug|Win32
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Release|x64.ActiveCfg = Release|x64
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Release|x64.Build.0 = Release|x64
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Release|x86.ActiveCfg = Release|Win32
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -251,6 +261,7 @@ Global
 		{CD620E74-446E-474C-8352-FF2EBDDF9958} = {380DF33E-5C77-4EBD-884D-8F2F0248BF93}
 		{2CBA3C99-11FC-42E7-8D28-F451D47EF340} = {380DF33E-5C77-4EBD-884D-8F2F0248BF93}
 		{47FB8E40-DB2D-4B68-B1D6-8B3876899645} = {380DF33E-5C77-4EBD-884D-8F2F0248BF93}
+		{87A3EF87-06E8-49A7-B8ED-0FCB6693B333} = {380DF33E-5C77-4EBD-884D-8F2F0248BF93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
