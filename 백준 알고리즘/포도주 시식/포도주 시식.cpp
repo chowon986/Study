@@ -23,5 +23,13 @@ int main()
 		D[i][2] = D[i - 1][1] + A[i];
 	}
 
-	int a = 0;
+	int Max = -1;
+
+	for (int i = 0; i < 3; i++)
+	{
+		if (Max < D[Cnt][i])
+			Max = D[Cnt][i];
+	}
+
+	cout << Max;
 }
