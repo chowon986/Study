@@ -9,7 +9,7 @@ int main()
 	int Cnt;
 	cin >> Cnt;
 
-	for (int i = 1; i <= Cnt; i++)
+	for (int i = 0; i < Cnt; i++)
 	{
 		cin >> Arr[i];
 	}
@@ -19,7 +19,7 @@ int main()
 
 	int Max = Arr[0];
 
-	for (int i = 1; i <= Cnt; i++)
+	for (int i = 1; i < Cnt; i++)
 	{
 		DP[i][0] = max(DP[i - 1][0] + Arr[i], Arr[i]);
 		DP[i][1] = max(DP[i - 1][0], DP[i - 1][1] + Arr[i]);
