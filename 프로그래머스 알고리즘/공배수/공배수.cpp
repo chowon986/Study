@@ -19,3 +19,8 @@ int solution(int number, int n, int m)
 
     return true;
 }
+
+int main()
+{
+
+}

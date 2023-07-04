@@ -11,7 +11,7 @@ int solution(int n)
 
     if (n % 2 != 0)
     {
-        while (n != 0)
+        while (n > 0)
         {
             answer += n;
             n -= 2;
@@ -19,7 +19,7 @@ int solution(int n)
     }
     else
     {
-        while (n != 0)
+        while (n > 0)
         {
             answer += n * n;
             n -= 2;

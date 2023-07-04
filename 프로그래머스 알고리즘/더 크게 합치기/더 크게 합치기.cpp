@@ -22,3 +22,8 @@ int solution(int a, int b)
 
     return answer;
 }
+
+int main()
+{
+
+}

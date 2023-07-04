@@ -13,3 +13,8 @@ int solution(int a, int b)
 
     return temp1 >= temp2 ? temp1 : temp2;
 }
+
+int main()
+{
+
+}
