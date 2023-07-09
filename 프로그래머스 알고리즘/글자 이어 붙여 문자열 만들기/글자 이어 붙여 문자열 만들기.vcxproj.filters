@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="주사위 게임3.cpp" />
+    <ClCompile Include="글자 이어 붙여 문자열 만들기.cpp" />
   </ItemGroup>
 </Project>
