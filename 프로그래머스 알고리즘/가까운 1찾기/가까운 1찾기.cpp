@@ -9,7 +9,7 @@ int solution(vector<int> arr, int idx)
 {
     int size = arr.size();
 
-    for (int i = idx + 1; idx < size; i++)
+    for (int i = idx; i < size; i++)
     {
         if (arr[i] == 1)
             return i;
