@@ -17,10 +17,7 @@ int solution(string myString, string pat)
     for (int i = 0; i < size; i++)
         pat[i] = tolower(pat[i]);
 
-    if (myString.find(pat) != string::npos)
-        return 1;
-
-    return 0;
+    return myString.find(pat) != string::npos ? 1: 0;
 }
 
 int main()
