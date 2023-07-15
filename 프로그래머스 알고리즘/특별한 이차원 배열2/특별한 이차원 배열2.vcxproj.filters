@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="0 떼기.cpp" />
+    <ClCompile Include="특별한 이차원 배열2.cpp" />
   </ItemGroup>
 </Project>
