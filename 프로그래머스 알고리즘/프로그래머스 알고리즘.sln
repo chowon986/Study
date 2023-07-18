@@ -207,6 +207,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "날짜 비교하기", "날�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문자열이 몇 번 등장하는지 세기", "문자열이 몇 번 등장하는지 세기\문자열이 몇 번 등장하는지 세기.vcxproj", "{4944C687-D0AE-4768-A3CA-AD36724FB07A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "문자열 잘라서 정렬하기", "문자열 잘라서 정렬하기\문자열 잘라서 정렬하기.vcxproj", "{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -903,6 +905,14 @@ Global
 		{4944C687-D0AE-4768-A3CA-AD36724FB07A}.Release|x64.Build.0 = Release|x64
 		{4944C687-D0AE-4768-A3CA-AD36724FB07A}.Release|x86.ActiveCfg = Release|Win32
 		{4944C687-D0AE-4768-A3CA-AD36724FB07A}.Release|x86.Build.0 = Release|Win32
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Debug|x64.ActiveCfg = Debug|x64
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Debug|x64.Build.0 = Debug|x64
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Debug|x86.Build.0 = Debug|Win32
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Release|x64.ActiveCfg = Release|x64
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Release|x64.Build.0 = Release|x64
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Release|x86.ActiveCfg = Release|Win32
+		{4E33DE9D-79A1-4495-A6ED-5AF8F15ABC27}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
