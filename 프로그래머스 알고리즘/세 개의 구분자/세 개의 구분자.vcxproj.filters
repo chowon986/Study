@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="문자열 잘라서 정렬하기.cpp" />
+    <ClCompile Include="세 개의 구분자.cpp" />
   </ItemGroup>
 </Project>
