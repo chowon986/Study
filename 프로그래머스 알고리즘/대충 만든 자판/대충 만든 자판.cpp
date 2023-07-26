@@ -8,9 +8,10 @@ using namespace std;
 vector<int> solution(vector<string> keymap, vector<string> targets)
 {
     vector<int> answer;
-
+    int minIdx;
     int size = targets.size();
-    int minIdx = 101;
+    answer.resize(size);
+
 
     for (int i = 0; i < size; i++)
     {
@@ -18,6 +19,7 @@ vector<int> solution(vector<string> keymap, vector<string> targets)
 
         for (int j = 0; j < stringSize; j++)
         {
+            minIdx = 101;
             char targetWord = targets[i][j];
 
             int keymapSize = keymap.size();
@@ -26,19 +28,18 @@ vector<int> solution(vector<string> keymap, vector<string> targets)
                 int keymapStringSize = keymap[k].size();
                 for (int q = 0; q < keymapStringSize; q++)
                 {
-                    if (keymap[k][q] == targetWord &&
-                        q < minIdx)
-                    {
+                    if (keymap[k][q] == targetWord && q < minIdx)
                         minIdx = q + 1;
-                    }
-
                 }
             }
 
             if (minIdx == 101)
-                answer.push_back(-1);
+            {
+                answer[i] = -1;
+                break;
+            }
             else
-                answer.push_back(minIdx);
+                answer[i] += minIdx;
         }
     }
 
