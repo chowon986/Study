@@ -257,6 +257,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[1차] 다트 게임", "[1�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "대충 만든 자판", "대충 만든 자판\대충 만든 자판.vcxproj", "{37B90803-1E22-4087-ACEB-DF4A0B53FA20}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "크레인 인형뽑기 게임", "크레인 인형뽑기 게임\크레인 인형뽑기 게임.vcxproj", "{BEB59580-C766-4228-B30B-D748AEF1F448}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1097,6 +1099,14 @@ Global
 		{37B90803-1E22-4087-ACEB-DF4A0B53FA20}.Release|x64.Build.0 = Release|x64
 		{37B90803-1E22-4087-ACEB-DF4A0B53FA20}.Release|x86.ActiveCfg = Release|Win32
 		{37B90803-1E22-4087-ACEB-DF4A0B53FA20}.Release|x86.Build.0 = Release|Win32
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Debug|x64.ActiveCfg = Debug|x64
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Debug|x64.Build.0 = Debug|x64
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Debug|x86.ActiveCfg = Debug|Win32
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Debug|x86.Build.0 = Debug|Win32
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Release|x64.ActiveCfg = Release|x64
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Release|x64.Build.0 = Release|x64
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Release|x86.ActiveCfg = Release|Win32
+		{BEB59580-C766-4228-B30B-D748AEF1F448}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1207,6 +1217,7 @@ Global
 		{DAB96FE7-9B35-4D63-BFE4-965FC931DFB7} = {BDE66ECF-C63D-4E74-9F7B-678982DC9F34}
 		{30707527-72F1-45FC-920D-CFB22D3F0524} = {BDE66ECF-C63D-4E74-9F7B-678982DC9F34}
 		{37B90803-1E22-4087-ACEB-DF4A0B53FA20} = {BDE66ECF-C63D-4E74-9F7B-678982DC9F34}
+		{BEB59580-C766-4228-B30B-D748AEF1F448} = {BDE66ECF-C63D-4E74-9F7B-678982DC9F34}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {91F432B4-A7F1-47B9-8DEF-BA39604D21F7}
