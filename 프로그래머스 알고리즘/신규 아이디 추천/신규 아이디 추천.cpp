@@ -46,7 +46,7 @@ string solution(string new_id)
 
     if (newSize == 0)
     {
-        answer += 'a';
+        recommendedID.push_back('a');
     }
 
     if (newSize > 15)

@@ -64,3 +64,8 @@ int solution(string dartResult)
 
     return answer;
 }
+
+int main()
+{
+
+}
