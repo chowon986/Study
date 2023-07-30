@@ -89,7 +89,7 @@ vector<int> solution(string today, vector<string> terms, vector<string> privacie
             else
             {
                 calcuratedYear = calcuratedYear + (calcuratedMonth / 12);
-                calcuratedMonth += (calcuratedMonth % 12);
+                calcuratedMonth = (calcuratedMonth % 12);
             }
 		}
 
