@@ -10,7 +10,6 @@ using namespace std;
 
 int solution(int cacheSize, vector<string> cities)
 {
-    // 예외 처리
     if (cacheSize == 0)
         return cities.size() * 5;
 
@@ -19,7 +18,6 @@ int solution(int cacheSize, vector<string> cities)
     int size = cities.size();
     int answer = 0;
 
-    // 소문자로 변경
     for (int i = 0; i < size; i++)
     {
         int tempSize = cities[i].size();
