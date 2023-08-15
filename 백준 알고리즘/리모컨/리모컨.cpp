@@ -10,7 +10,7 @@ int main()
 
 	vector<int> BrokenKeys;
 
-	int BrokenKeyCount;
+	int BrokenKeyCount = 1;
 	for (int i = 0; i < BrokenKeyCount; i++)
 	{
 		int Temp;

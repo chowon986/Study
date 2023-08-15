@@ -12,6 +12,8 @@ int CheckMaxCandies(vector<vector<char>> C, int N)
 
 		}
 	}
+
+	return 1;
 }
 
 int main()
