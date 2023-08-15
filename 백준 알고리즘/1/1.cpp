@@ -17,7 +17,7 @@ int main()
 			CurNum = CurNum % N;
 			if (CurNum == 0)
 			{
-				cout << i;
+				cout << i << '\n';
 				break;
 			}
 		}
