@@ -99,6 +99,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "소수 찾기", "소수 찾
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "소수 구하기", "소수 구하기\소수 구하기.vcxproj", "{379DA529-819F-4FA6-9E44-7CAB8D944E02}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "골드바흐의 추측", "골드바흐의 추측\골드바흐의 추측.vcxproj", "{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -451,6 +453,14 @@ Global
 		{379DA529-819F-4FA6-9E44-7CAB8D944E02}.Release|x64.Build.0 = Release|x64
 		{379DA529-819F-4FA6-9E44-7CAB8D944E02}.Release|x86.ActiveCfg = Release|Win32
 		{379DA529-819F-4FA6-9E44-7CAB8D944E02}.Release|x86.Build.0 = Release|Win32
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Debug|x64.ActiveCfg = Debug|x64
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Debug|x64.Build.0 = Debug|x64
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Debug|x86.ActiveCfg = Debug|Win32
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Debug|x86.Build.0 = Debug|Win32
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Release|x64.ActiveCfg = Release|x64
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Release|x64.Build.0 = Release|x64
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Release|x86.ActiveCfg = Release|Win32
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -498,6 +508,7 @@ Global
 		{8A140786-8E5E-410A-81A3-5D7679A57575} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
 		{42377B9F-AD0F-4FAD-B75F-15FD91558D2C} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
 		{379DA529-819F-4FA6-9E44-7CAB8D944E02} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
+		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
