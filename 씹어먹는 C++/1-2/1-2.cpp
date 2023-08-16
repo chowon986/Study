@@ -10,21 +10,23 @@
 // std::cout은 std란 namespace에 있는 cout 함수를 의미
 namespace header1 
 {
-	int foo();
+	int foo() { return 0; }
 	void bar();
 
 	int func()
 	{
 		foo();			// header1의 foo가 호출됨, 즉 자기 자신이 포함되어 있는 이름 공간 안에서는
 						// 이름 공간을 명시하지 않고 자유롭게 부를 수 있음
-		header2::foo(); // namespace를 이용하면 소속되지 않은 함수도 호출 가능
+		//header2::foo(); // namespace를 이용하면 소속되지 않은 함수도 호출 가능
+		
+		return 0;
 	}
 }
 
 namespace header2
 {
-	int foo();
-	void bar();
+	int foo() { return 0; }
+	void bar() {}
 }
 
 // 매번 header1::을 붙이기 귀찮은 경우 using 키워드를 통해 해결 가능
