@@ -179,3 +179,74 @@
 //
 //	cout << ans;
 //}
+
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main()
+{
+	int target;
+	cin >> target;
+
+	int brokenCount;
+	cin >> brokenCount;
+
+	vector<bool> isBrokenButton(10, false);
+
+	for (int i = 0; i < brokenCount; i++)
+	{
+		int temp;
+		cin >> temp;
+		isBrokenButton[temp] = true;
+	}
+
+	int curChannel = 100;
+	int minButton = target;
+	int temp = minButton;
+
+	while (temp > 0)
+	{
+		if (isBrokenButton[temp % 10] == false)		temp /= 10;
+		else
+		{
+			--minButton;
+			temp = minButton;
+		}
+	}
+
+	if (minButton == 0)
+	{
+		if (isBrokenButton[0]) minButton = -1000000;
+		else minButton = 0;
+	}
+
+	int minPressCount = to_string(minButton).size();
+	minPressCount += (target - minButton);
+
+	int maxButton = target;
+	temp = maxButton;
+
+	while (temp >= 0 && temp < 1000000)
+	{
+		if (isBrokenButton[temp % 10] == false)
+		{
+			temp /= 10;
+			if (temp == 0)
+				break;
+		}
+		else
+		{
+			++maxButton;
+			temp = maxButton;
+		}
+	}
+
+	int maxPressCount = to_string(maxButton).size();
+	maxPressCount += (maxButton - target);
+
+	int pressCount = target > curChannel ? target - curChannel : curChannel - target;
+
+	cout << min(pressCount, min(minPressCount, maxPressCount));
+}
