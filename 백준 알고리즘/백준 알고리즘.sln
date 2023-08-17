@@ -105,6 +105,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "테트로미노", "테트�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "카잉 달력", "카잉 달력\카잉 달력.vcxproj", "{D2DF9842-5FC6-408C-8267-473C0E74A391}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "수 이어 쓰기 1", "수 이어 쓰기 1\수 이어 쓰기 1.vcxproj", "{BE66C966-80F0-4B06-8B3B-77209CF70FC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -481,6 +483,14 @@ Global
 		{D2DF9842-5FC6-408C-8267-473C0E74A391}.Release|x64.Build.0 = Release|x64
 		{D2DF9842-5FC6-408C-8267-473C0E74A391}.Release|x86.ActiveCfg = Release|Win32
 		{D2DF9842-5FC6-408C-8267-473C0E74A391}.Release|x86.Build.0 = Release|Win32
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Debug|x64.ActiveCfg = Debug|x64
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Debug|x64.Build.0 = Debug|x64
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Debug|x86.ActiveCfg = Debug|Win32
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Debug|x86.Build.0 = Debug|Win32
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Release|x64.ActiveCfg = Release|x64
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Release|x64.Build.0 = Release|x64
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Release|x86.ActiveCfg = Release|Win32
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -531,6 +541,7 @@ Global
 		{1166BB11-E8C7-4AD1-929B-0DBBAC731E4F} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
 		{E819051A-7CE8-4871-B84D-534EDA3D113C} = {5EAF0721-FE7D-4642-996D-EA39FC9E6B47}
 		{D2DF9842-5FC6-408C-8267-473C0E74A391} = {5EAF0721-FE7D-4642-996D-EA39FC9E6B47}
+		{BE66C966-80F0-4B06-8B3B-77209CF70FC3} = {5EAF0721-FE7D-4642-996D-EA39FC9E6B47}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
