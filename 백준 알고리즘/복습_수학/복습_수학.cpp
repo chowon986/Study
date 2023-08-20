@@ -1,5 +1,7 @@
 ﻿// 복습_수학.cpp 
 
+// 나머지
+
 // 나머지 : https://www.acmicpc.net/problem/10430
 //#include <iostream>
 //using namespace std;
@@ -14,6 +16,8 @@
 //	cout << (A * B) % C << '\n';
 //	cout << ((A % C) * (B % C)) % C << '\n';
 //}
+
+// 1
 
 // 1 : https://www.acmicpc.net/problem/4375
 //#include <iostream>
@@ -39,6 +43,8 @@
 //    }
 //}
 
+// 약수
+
 // 약수 : https://www.acmicpc.net/problem/1037
 //#include <iostream>
 //using namespace std;
@@ -61,6 +67,8 @@
 //    cout << min * max;
 //}
 
+// 약수의 합 2
+
 // 약수의 합 2 : https://www.acmicpc.net/problem/17427
 //#include <iostream>
 //using namespace std;
@@ -78,6 +86,8 @@
 //
 //    cout << sum;
 //}
+
+// 약수의 합
 
 // 약수의 합 : https://www.acmicpc.net/problem/17425
 //#include <iostream>
@@ -115,6 +125,9 @@
 //    }
 //}
 
+
+// 최대공약수와 최소공배수
+
 // 최대공약수와 최소공배수 : https://www.acmicpc.net/problem/2609
 //#include <iostream>
 //using namespace std;
@@ -142,6 +155,8 @@
 //
 //    cout << a * (originA / a) * (originB / a);
 //}
+
+// 소수 찾기
 
 // 소수 찾기 : https://www.acmicpc.net/problem/1978
 //#include <iostream>
@@ -178,6 +193,8 @@
 //    cout << sum;
 //}
 
+// 소수 구하기
+
 // 소수 구하기 : https://www.acmicpc.net/problem/1929
 //#include <iostream>
 //#include <vector>
@@ -209,6 +226,8 @@
 //            cout << i << '\n';
 //    }
 //}
+
+// 골드바흐의 추측
 
 // 골드바흐의 추측 : https://www.acmicpc.net/problem/6588
 //#include <iostream>
@@ -251,3 +270,8 @@
 //        }
 //    }
 //}
+
+int main()
+{
+
+}
