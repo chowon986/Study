@@ -2,13 +2,13 @@
 
 #include <iostream>
 
-Marine& Marine::be_attacked(int damage_earn)
-{
-	hp -= damage_earn;
-	if (hp <= 0) is_dead = true;
-
-	return *this;
-}
+//Marine& Marine::be_attacked(int damage_earn)
+//{
+//	hp -= damage_earn;
+//	if (hp <= 0) is_dead = true;
+//
+//	return *this;
+//}
 
 //Marine& Marine::be_attacked(int damage_earn)
 //{
@@ -18,3 +18,7 @@ Marine& Marine::be_attacked(int damage_earn)
 //	return *this;
 //}
 
+int main()
+{
+
+}
