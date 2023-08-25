@@ -1,33 +1,67 @@
-﻿#include <iostream>
-using namespace std;
+﻿//#include <iostream>
+//using namespace std;
+//
+//int A[100001];
+//int D[100001];
+//
+//int main()
+//{
+//	int Cnt;
+//	cin >> Cnt;
+//
+//	for (int i = 1; i <= Cnt; i++)
+//	{
+//		int N;
+//		cin >> N;
+//		A[i] = N;
+//	}
+//
+//	D[1] = A[1];
+//
+//	int Max = -1001;
+//	for (int i = 1; i <= Cnt; i++)
+//	{
+//		D[i] = max(D[i - 1] + A[i], A[i]);
+//
+//		if (D[i] > Max)
+//		{
+//			Max = D[i];
+//		}
+//	}
+//
+//	cout << Max;
+//}
 
-int A[100001];
-int D[100001];
+#include <iostream>
+#include <vector>
+using namespace std;
 
 int main()
 {
-	int Cnt;
-	cin >> Cnt;
+	int n;
+	cin >> n;
 
-	for (int i = 1; i <= Cnt; i++)
+	vector<int> numbers(n + 1);
+	vector<int> d(n + 1);
+
+	for (int i = 0; i < n; i++)
 	{
-		int N;
-		cin >> N;
-		A[i] = N;
+		int temp;
+		cin >> temp;
+		numbers[i] = temp;
 	}
 
-	D[1] = A[1];
+	int maxValue = d[0] = numbers[0];
 
-	int Max = -1001;
-	for (int i = 1; i <= Cnt; i++)
+	for (int i = 1; i < n; i++)
 	{
-		D[i] = max(D[i - 1] + A[i], A[i]);
+		if (numbers[i] < d[i - 1] + numbers[i])
+			d[i] = d[i - 1] + numbers[i];
+		else
+			d[i] = numbers[i];
 
-		if (D[i] > Max)
-		{
-			Max = D[i];
-		}
+		maxValue = max(d[i], maxValue);
 	}
 
-	cout << Max;
+	cout << maxValue;
 }
