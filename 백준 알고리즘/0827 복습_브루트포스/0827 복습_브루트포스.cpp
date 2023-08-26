@@ -250,50 +250,164 @@
 
 // 일곱 난쟁이 : https://www.acmicpc.net/problem/2309
 
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//vector<int> talls;
+//vector<bool> isTrue(10, true);
+//
+//int main()
+//{
+//	int sumTall = 0;
+//	for (int i = 0; i < 9; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		talls.push_back(temp);
+//		sumTall += temp;
+//	}
+//
+//	sort(talls.begin(), talls.end());
+//
+//	for (int i = 0; i < 9; i++)
+//	{
+//		int totalTalls = sumTall;
+//		for (int j = 0; j < 9; j++)
+//		{
+//			if (i == j) continue;
+//			// 9명 중 2명의 난쟁이를 빼면 7난쟁이가 됨
+//			if (100 == totalTalls - (talls[i] + talls[j]))
+//			{
+//				isTrue[i] = isTrue[j] = false;
+//
+//				for (int k = 0; k < 9; k++)
+//				{
+//					if (isTrue[k])
+//						cout << talls[k] << '\n';
+//				}
+//				return 0;
+//			}
+//		}
+//	}
+//}
+
+// 사탕 게임 : https://www.acmicpc.net/problem/3085
+
 #include <iostream>
 #include <vector>
-#include <algorithm>
 using namespace std;
 
-vector<int> talls;
-vector<bool> isTrue(10, true);
+vector<vector<char>> board;
+int n;
+
+int check()
+{
+	// 가로 최대 체크
+	int maxValue = 0;
+	for (int i = 0; i < n; i++)
+	{
+		char prevWord = board[i][0];
+		int count = 0;
+		for (int j = 0; j < n; j++)
+		{
+			if (prevWord == board[i][j])
+				++count;
+			else
+			{
+				prevWord = board[i][j];
+				maxValue = max(count, maxValue);
+				count = 1;
+			}
+		}
+
+		maxValue = max(count, maxValue);
+	}
+
+	// 세로 최대 체크
+	for (int i = 0; i < n; i++)
+	{
+		char prevWord = board[0][i];
+		int count = 0;
+		for (int j = 0; j < n; j++)
+		{
+			if (prevWord == board[j][i])
+				++count;
+			else
+			{
+				prevWord = board[j][i];
+				maxValue = max(count, maxValue);
+				count = 1;
+			}
+		}
+
+		maxValue = max(count, maxValue);
+	}
+
+	return maxValue;
+}
 
 int main()
 {
-	int sumTall = 0;
-	for (int i = 0; i < 9; i++)
+	int Maximum = 0;
+	cin >> n;
+
+	board.resize(n);
+
+	for (int i = 0; i < n; i++)
 	{
-		int temp;
-		cin >> temp;
-		talls.push_back(temp);
-		sumTall += temp;
+		board[i].resize(n);
+
+		for (int j = 0; j < n; j++)
+		{
+			char temp;
+			cin >> temp;
+			board[i][j] = temp;
+		}
 	}
 
-	sort(talls.begin(), talls.end());
-
-	for (int i = 0; i < 9; i++)
+	for (int i = 0; i < n; i++)
 	{
-		int totalTalls = sumTall;
-		for (int j = 0; j < 9; j++)
+		for (int j = 0; j < n; j++)
 		{
 			if (i == j) continue;
-			// 9명 중 2명의 난쟁이를 빼면 7난쟁이가 됨
-			if (100 == totalTalls - (talls[i] + talls[j]))
-			{
-				isTrue[i] = isTrue[j] = false;
 
-				for (int k = 0; k < 9; k++)
+			if (j == n - 1) // 맨 오른쪽이고
+			{
+				if (i != n - 1) // 맨 밑이 아니면
 				{
-					if (isTrue[k])
-						cout << talls[k] << '\n';
+					// 아래쪽 체크 가능
+					swap(board[i][j], board[i + 1][j]);
+					Maximum = max(Maximum, check());
+					swap(board[i][j], board[i + 1][j]);
 				}
-				return 0;
+			}
+
+			else if (i == n - 1) // 맨 밑이면 
+			{
+				// 오른쪽 체크 가능
+				swap(board[i][j], board[i][j + 1]);
+				Maximum = max(Maximum, check());
+				swap(board[i][j], board[i][j + 1]);
+			}
+			else
+			{
+				// 아래쪽 체크 가능
+				swap(board[i][j], board[i + 1][j]);
+				Maximum = max(Maximum, check());
+				swap(board[i][j], board[i + 1][j]);
+
+				// 오른쪽 체크 가능
+				swap(board[i][j], board[i][j + 1]);
+				Maximum = max(Maximum, check());
+				swap(board[i][j], board[i][j + 1]);
 			}
 		}
 	}
-}
 
-// 사탕 게임 : https://www.acmicpc.net/problem/3085
+	cout << Maximum;
+}
 
 // 날짜 계산 : https://www.acmicpc.net/problem/1476
 
