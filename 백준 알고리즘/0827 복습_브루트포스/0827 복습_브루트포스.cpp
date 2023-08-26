@@ -72,88 +72,226 @@
 
 // 리모컨 : https://www.acmicpc.net/problem/1107
 
-#include <iostream>
-#include <string>
-using namespace std;
+//#include <iostream>
+//#include <string>
+//using namespace std;
+//
+//int main()
+//{
+//	int target, count;
+//	cin >> target >> count;
+//
+//	bool brokenNumbers[10] = { false, };
+//
+//	for (int i = 0; i < count; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		brokenNumbers[temp] = true;
+//	}
+//
+//	int curChannel = 100;
+//	int moveCount = curChannel > target ? curChannel - target : target - curChannel;
+//
+//	int ChannelA = target;
+//	int copyChannel = ChannelA;
+//
+//	while (copyChannel > 0)
+//	{
+//		if (brokenNumbers[copyChannel % 10])
+//		{
+//			// 고장난 채널이면
+//			--ChannelA;
+//			copyChannel = ChannelA;
+//		}
+//		else
+//		{
+//			copyChannel /= 10;
+//		}
+//	}
+//
+//
+//	if (ChannelA == 0)
+//	{
+//		if (brokenNumbers[0]) ChannelA = -1000000;
+//		else ChannelA = 0;
+//	}
+//
+//	int tempNum = to_string(ChannelA).size();
+//	tempNum += target - ChannelA;
+//
+//	moveCount = min(tempNum, moveCount);
+//
+//	int ChannelB = target;
+//	copyChannel = ChannelB;
+//
+//	while (copyChannel >= 0 && copyChannel < 1000000)
+//	{
+//		if (brokenNumbers[copyChannel % 10])
+//		{
+//			// 고장난 채널이면
+//			++ChannelB;
+//			copyChannel = ChannelB;
+//		}
+//		else
+//		{
+//			copyChannel /= 10;
+//			if (copyChannel == 0)
+//				break;
+//		}
+//	}
+//
+//	tempNum = to_string(ChannelB).size();
+//	tempNum += ChannelB - target;
+//
+//	moveCount = min(tempNum, moveCount);
+//
+//	cout << moveCount;
+//}
 
-int main()
-{
-	int target, count;
-	cin >> target >> count;
+// 반례 모음집 : https://www.acmicpc.net/board/view/109610
+/*
+0
+0
+답:1
 
-	bool brokenNumbers[10] = { false, };
-
-	for (int i = 0; i < count; i++)
-	{
-		int temp;
-		cin >> temp;
-		brokenNumbers[temp] = true;
-	}
-
-	int curChannel = 100;
-	int moveCount = curChannel > target ? curChannel - target : target - curChannel;
-
-	int ChannelA = target;
-	int copyChannel = ChannelA;
-
-	while (copyChannel > 0)
-	{
-		if (brokenNumbers[copyChannel % 10])
-		{
-			// 고장난 채널이면
-			--ChannelA;
-			copyChannel = ChannelA;
-		}
-		else
-		{
-			copyChannel /= 10;
-		}
-	}
-
-
-	if (ChannelA == 0)
-	{
-		if (brokenNumbers[0]) ChannelA = -1000000;
-		else ChannelA = 0;
-	}
-
-	int tempNum = to_string(ChannelA).size();
-	tempNum += target - ChannelA;
-
-	moveCount = min(tempNum, moveCount);
-
-	int ChannelB = target;
-	copyChannel = ChannelB;
-
-	while (copyChannel >= 0 && copyChannel < 1000000)
-	{
-		if (brokenNumbers[copyChannel % 10])
-		{
-			// 고장난 채널이면
-			++ChannelB;
-			copyChannel = ChannelB;
-		}
-		else
-		{
-			copyChannel /= 10;
-			if (copyChannel == 0)
-				break;
-		}
-	}
-
-	tempNum = to_string(ChannelB).size();
-	tempNum += ChannelB - target;
-
-	moveCount = min(tempNum, moveCount);
-
-	cout << moveCount;
-}
+0
+2
+0 1
+답:3
+*/
 
 // N과 M (1) : https://www.acmicpc.net/problem/15649
 
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//vector<int> numbers(10);
+//vector<bool> isUsed(10, false);
+//
+//void go(int index, int count, int maxNum)
+//{
+//	if (index == count)
+//	{
+//		for (int i = 0; i < index; i++)
+//			cout << numbers[i] << ' ';
+//
+//		cout << '\n';
+//		return;
+//	}
+//
+//	for (int i = 1; i <= maxNum; i++)
+//	{
+//		if (isUsed[i]) continue;
+//
+//		numbers[index] = i;
+//		isUsed[i] = true;
+//		go(index + 1, count, maxNum);
+//		isUsed[i] = false;
+//	}
+//}
+//
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//
+//	go(0, m, n);
+//}
+
 // N과 M (7) : https://www.acmicpc.net/problem/15656
 
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//vector<int> numbers;
+//vector<int> answer;
+//
+//void go(int index, int count)
+//{
+//	if (index == count)
+//	{
+//		for (int i = 0; i < index; i++)
+//		{
+//			cout << answer[i] << ' ';
+//		}
+//		cout << '\n';
+//		return;
+//	}
+//
+//	for (int i = 0; i < numbers.size(); i++)
+//	{
+//		answer[index] = numbers[i];
+//		go(index + 1, count);
+//	}
+//}
+//
+//int main()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		numbers.push_back(temp);
+//	}
+//
+//	sort(numbers.begin(), numbers.end());
+//
+//	answer.resize(m + 1);
+//	go(0, m);
+//}
+
 // 일곱 난쟁이 : https://www.acmicpc.net/problem/2309
+
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+vector<int> talls;
+vector<bool> isTrue(10, true);
+
+int main()
+{
+	int sumTall = 0;
+	for (int i = 0; i < 9; i++)
+	{
+		int temp;
+		cin >> temp;
+		talls.push_back(temp);
+		sumTall += temp;
+	}
+
+	sort(talls.begin(), talls.end());
+
+	for (int i = 0; i < 9; i++)
+	{
+		int totalTalls = sumTall;
+		for (int j = 0; j < 9; j++)
+		{
+			if (i == j) continue;
+			// 9명 중 2명의 난쟁이를 빼면 7난쟁이가 됨
+			if (100 == totalTalls - (talls[i] + talls[j]))
+			{
+				isTrue[i] = isTrue[j] = false;
+
+				for (int k = 0; k < 9; k++)
+				{
+					if (isTrue[k])
+						cout << talls[k] << '\n';
+				}
+				return 0;
+			}
+		}
+	}
+}
 
 // 사탕 게임 : https://www.acmicpc.net/problem/3085
 
