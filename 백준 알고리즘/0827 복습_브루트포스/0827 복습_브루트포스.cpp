@@ -295,121 +295,153 @@
 
 // 사탕 게임 : https://www.acmicpc.net/problem/3085
 
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//vector<vector<char>> board;
+//int n;
+//
+//int check()
+//{
+//	// 가로 최대 체크
+//	int maxValue = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		char prevWord = board[i][0];
+//		int count = 0;
+//		for (int j = 0; j < n; j++)
+//		{
+//			if (prevWord == board[i][j])
+//				++count;
+//			else
+//			{
+//				prevWord = board[i][j];
+//				maxValue = max(count, maxValue);
+//				count = 1;
+//			}
+//		}
+//
+//		maxValue = max(count, maxValue);
+//	}
+//
+//	// 세로 최대 체크
+//	for (int i = 0; i < n; i++)
+//	{
+//		char prevWord = board[0][i];
+//		int count = 0;
+//		for (int j = 0; j < n; j++)
+//		{
+//			if (prevWord == board[j][i])
+//				++count;
+//			else
+//			{
+//				prevWord = board[j][i];
+//				maxValue = max(count, maxValue);
+//				count = 1;
+//			}
+//		}
+//
+//		maxValue = max(count, maxValue);
+//	}
+//
+//	return maxValue;
+//}
+//
+//int main()
+//{
+//	int Maximum = 0;
+//	cin >> n;
+//
+//	board.resize(n);
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		board[i].resize(n);
+//
+//		for (int j = 0; j < n; j++)
+//		{
+//			char temp;
+//			cin >> temp;
+//			board[i][j] = temp;
+//		}
+//	}
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = 0; j < n; j++)
+//		{
+//			if (i == j) continue;
+//
+//			if (j == n - 1) // 맨 오른쪽이고
+//			{
+//				if (i != n - 1) // 맨 밑이 아니면
+//				{
+//					// 아래쪽 체크 가능
+//					swap(board[i][j], board[i + 1][j]);
+//					Maximum = max(Maximum, check());
+//					swap(board[i][j], board[i + 1][j]);
+//				}
+//			}
+//
+//			else if (i == n - 1) // 맨 밑이면 
+//			{
+//				// 오른쪽 체크 가능
+//				swap(board[i][j], board[i][j + 1]);
+//				Maximum = max(Maximum, check());
+//				swap(board[i][j], board[i][j + 1]);
+//			}
+//			else
+//			{
+//				// 아래쪽 체크 가능
+//				swap(board[i][j], board[i + 1][j]);
+//				Maximum = max(Maximum, check());
+//				swap(board[i][j], board[i + 1][j]);
+//
+//				// 오른쪽 체크 가능
+//				swap(board[i][j], board[i][j + 1]);
+//				Maximum = max(Maximum, check());
+//				swap(board[i][j], board[i][j + 1]);
+//			}
+//		}
+//	}
+//
+//	cout << Maximum;
+//}
+
+// 날짜 계산 : https://www.acmicpc.net/problem/1476
+
 #include <iostream>
-#include <vector>
 using namespace std;
-
-vector<vector<char>> board;
-int n;
-
-int check()
-{
-	// 가로 최대 체크
-	int maxValue = 0;
-	for (int i = 0; i < n; i++)
-	{
-		char prevWord = board[i][0];
-		int count = 0;
-		for (int j = 0; j < n; j++)
-		{
-			if (prevWord == board[i][j])
-				++count;
-			else
-			{
-				prevWord = board[i][j];
-				maxValue = max(count, maxValue);
-				count = 1;
-			}
-		}
-
-		maxValue = max(count, maxValue);
-	}
-
-	// 세로 최대 체크
-	for (int i = 0; i < n; i++)
-	{
-		char prevWord = board[0][i];
-		int count = 0;
-		for (int j = 0; j < n; j++)
-		{
-			if (prevWord == board[j][i])
-				++count;
-			else
-			{
-				prevWord = board[j][i];
-				maxValue = max(count, maxValue);
-				count = 1;
-			}
-		}
-
-		maxValue = max(count, maxValue);
-	}
-
-	return maxValue;
-}
 
 int main()
 {
-	int Maximum = 0;
-	cin >> n;
+	int e, s, m;
+	cin >> e >> s >> m;
 
-	board.resize(n);
+	int curE = 1;
+	int curS = 1;
+	int curM = 1;
 
-	for (int i = 0; i < n; i++)
+	int count = 1;
+
+	while (e != curE || s != curS || m != curM)
 	{
-		board[i].resize(n);
+		++count;
+		++curE;
+		++curS;
+		++curM;
 
-		for (int j = 0; j < n; j++)
-		{
-			char temp;
-			cin >> temp;
-			board[i][j] = temp;
-		}
+		if (curE == 16)
+			curE = 1;
+		if (curS == 29)
+			curS = 1;
+		if (curM == 20)
+			curM = 1;
 	}
 
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = 0; j < n; j++)
-		{
-			if (i == j) continue;
-
-			if (j == n - 1) // 맨 오른쪽이고
-			{
-				if (i != n - 1) // 맨 밑이 아니면
-				{
-					// 아래쪽 체크 가능
-					swap(board[i][j], board[i + 1][j]);
-					Maximum = max(Maximum, check());
-					swap(board[i][j], board[i + 1][j]);
-				}
-			}
-
-			else if (i == n - 1) // 맨 밑이면 
-			{
-				// 오른쪽 체크 가능
-				swap(board[i][j], board[i][j + 1]);
-				Maximum = max(Maximum, check());
-				swap(board[i][j], board[i][j + 1]);
-			}
-			else
-			{
-				// 아래쪽 체크 가능
-				swap(board[i][j], board[i + 1][j]);
-				Maximum = max(Maximum, check());
-				swap(board[i][j], board[i + 1][j]);
-
-				// 오른쪽 체크 가능
-				swap(board[i][j], board[i][j + 1]);
-				Maximum = max(Maximum, check());
-				swap(board[i][j], board[i][j + 1]);
-			}
-		}
-	}
-
-	cout << Maximum;
+	cout << count;
 }
-
-// 날짜 계산 : https://www.acmicpc.net/problem/1476
 
 // 테트로미노 : https://www.acmicpc.net/problem/14500
 
