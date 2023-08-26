@@ -411,40 +411,110 @@
 
 // 날짜 계산 : https://www.acmicpc.net/problem/1476
 
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	int e, s, m;
+//	cin >> e >> s >> m;
+//
+//	int curE = 1;
+//	int curS = 1;
+//	int curM = 1;
+//
+//	int count = 1;
+//
+//	while (e != curE || s != curS || m != curM)
+//	{
+//		++count;
+//		++curE;
+//		++curS;
+//		++curM;
+//
+//		if (curE == 16)
+//			curE = 1;
+//		if (curS == 29)
+//			curS = 1;
+//		if (curM == 20)
+//			curM = 1;
+//	}
+//
+//	cout << count;
+//}
 
-int main()
-{
-	int e, s, m;
-	cin >> e >> s >> m;
-
-	int curE = 1;
-	int curS = 1;
-	int curM = 1;
-
-	int count = 1;
-
-	while (e != curE || s != curS || m != curM)
-	{
-		++count;
-		++curE;
-		++curS;
-		++curM;
-
-		if (curE == 16)
-			curE = 1;
-		if (curS == 29)
-			curS = 1;
-		if (curM == 20)
-			curM = 1;
-	}
-
-	cout << count;
-}
 
 // 테트로미노 : https://www.acmicpc.net/problem/14500
 
 // 카잉 달력 : https://www.acmicpc.net/problem/6064
 
 // 수 이어 쓰기1 : https://www.acmicpc.net/problem/1748
+
+////////////////////////////////////////////////////////////
+
+// 1, 2, 3 더하기 : https://www.acmicpc.net/problem/9095
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+vector<int> d(12, 0);
+
+int main()
+{
+	int n;
+	cin >> n;
+	
+	d[1] = 1;
+	d[2] = 2;
+	d[3] = 4;
+
+	for (int i = 4; i < 11; i++)
+	{
+		d[i] = d[i - 1] + d[i - 2] + d[i - 3];
+	}
+
+	for (int i = 0; i < n; i++)
+	{
+		int temp;
+		cin >> temp;
+		cout << d[temp] << '\n';
+	}
+}
+
+// 암호 만들기 : https://www.acmicpc.net/problem/1759
+
+// 퇴사 : https://www.acmicpc.net/problem/14501
+
+// 스타트와 링크 : https://www.acmicpc.net/problem/14889
+
+// 링크와 스타트 : https://www.acmicpc.net/problem/15661
+
+// 부등호 : https://www.acmicpc.net/problem/2529
+
+// 맞춰봐 : https://www.acmicpc.net/problem/1248
+
+
+////////////////////////////////////////////////////////////
+
+// 다음 순열 : https://www.acmicpc.net/problem/10972
+ 
+// 이전 순열 : https://www.acmicpc.net/problem/10973
+ 
+// 모든 순열 : https://www.acmicpc.net/problem/10974
+
+// 차이를 최대로 : https://www.acmicpc.net/problem/10819
+
+// 외판원 순회2 : https://www.acmicpc.net/problem/10971
+
+// 로또 : https://www.acmicpc.net/problem/6603
+
+////////////////////////////////////////////////////////////
+
+// 집합 : https://www.acmicpc.net/problem/11723
+
+// 부분수열의 합 : https://www.acmicpc.net/problem/1182
+
+// 종이 조각 : https://www.acmicpc.net/problem/14391
+
