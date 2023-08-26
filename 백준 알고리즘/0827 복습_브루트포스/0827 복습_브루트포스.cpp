@@ -69,7 +69,6 @@
 //	cout << ans;
 //}
 
-
 // 리모컨 : https://www.acmicpc.net/problem/1107
 
 //#include <iostream>
@@ -443,7 +442,6 @@
 //	cout << count;
 //}
 
-
 // 테트로미노 : https://www.acmicpc.net/problem/14500
 
 // 카잉 달력 : https://www.acmicpc.net/problem/6064
@@ -568,12 +566,139 @@
 ////////////////////////////////////////////////////////////
 
 // 다음 순열 : https://www.acmicpc.net/problem/10972
- 
+
+//#include <iostream>
+//#include <algorithm>
+//#include <vector>
+//
+//using namespace std;
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	
+//	vector<int> permutation;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		permutation.push_back(temp);
+//	}
+//	
+//
+//	if (next_permutation(permutation.begin(), permutation.end()))
+//	{
+//		for (int i = 0; i < n; i++)
+//		{
+//			cout << permutation[i] << ' ';
+//		}
+//	}
+//	else
+//		cout << -1;
+//}
+
 // 이전 순열 : https://www.acmicpc.net/problem/10973
- 
+
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//
+//	vector<int> permutation;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		permutation.push_back(temp);
+//	}
+//
+//	if (prev_permutation(permutation.begin(), permutation.end()))
+//	{
+//		for (int i = 0; i < n; i++)
+//		{
+//			cout << permutation[i] << ' ';
+//		}
+//	}
+//	else
+//		cout << -1;
+//}
+
 // 모든 순열 : https://www.acmicpc.net/problem/10974
 
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//
+//	vector<int> permutation;
+//
+//	for (int i = 1; i <= n; i++)
+//	{
+//		permutation.push_back(i);
+//	}
+//
+//	do
+//	{
+//		for (int i = 0; i < n; i++)
+//		{
+//			cout << permutation[i] << ' ';
+//		}
+//		cout << '\n';
+//	} while (next_permutation(permutation.begin(), permutation.end()));
+//}
+
 // 차이를 최대로 : https://www.acmicpc.net/problem/10819
+
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int main()
+//{
+//	vector<int> permutation;
+//
+//	int n;
+//	cin >> n;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		permutation.push_back(temp);
+//	}
+//
+//	sort(permutation.begin(), permutation.end());
+//
+//	int maxValue = 0;
+//	do
+//	{
+//		int sum = 0;
+//		for (int i = 0; i < n - 1; i++)
+//		{
+//			sum += abs(permutation[i] - permutation[i + 1]);
+//		}
+//
+//		maxValue = max(sum, maxValue);
+//
+//	} while (next_permutation(permutation.begin(), permutation.end()));
+//
+//	cout << maxValue;
+//}
 
 // 외판원 순회2 : https://www.acmicpc.net/problem/10971
 
@@ -586,4 +711,3 @@
 // 부분수열의 합 : https://www.acmicpc.net/problem/1182
 
 // 종이 조각 : https://www.acmicpc.net/problem/14391
-
