@@ -454,36 +454,105 @@
 
 // 1, 2, 3 더하기 : https://www.acmicpc.net/problem/9095
 
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-vector<int> d(12, 0);
-
-int main()
-{
-	int n;
-	cin >> n;
-	
-	d[1] = 1;
-	d[2] = 2;
-	d[3] = 4;
-
-	for (int i = 4; i < 11; i++)
-	{
-		d[i] = d[i - 1] + d[i - 2] + d[i - 3];
-	}
-
-	for (int i = 0; i < n; i++)
-	{
-		int temp;
-		cin >> temp;
-		cout << d[temp] << '\n';
-	}
-}
+//#include <iostream>
+//#include <vector>
+//
+//using namespace std;
+//
+//vector<int> d(12, 0);
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	
+//	d[1] = 1;
+//	d[2] = 2;
+//	d[3] = 4;
+//
+//	for (int i = 4; i < 11; i++)
+//	{
+//		d[i] = d[i - 1] + d[i - 2] + d[i - 3];
+//	}
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		cout << d[temp] << '\n';
+//	}
+//}
 
 // 암호 만들기 : https://www.acmicpc.net/problem/1759
+
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//vector<char> alpha;
+//vector<char> answer(100000);
+//
+//int n, m;
+//
+//bool check()
+//{
+//	int mo = 0;
+//	int ja = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (answer[i] == 'a' ||
+//			answer[i] == 'e' ||
+//			answer[i] == 'i' ||
+//			answer[i] == 'o' ||
+//			answer[i] == 'u')
+//			++mo;
+//		else
+//			++ja;
+//	}
+//
+//	return mo >= 1 && ja >= 2;
+//}
+//
+//void go(int index, int start, int count)
+//{
+//	if (index == count)
+//	{
+//		if(check())
+//		{
+//			for (int i = 0; i < index; i++)
+//			{
+//				cout << answer[i];
+//			}
+//
+//			cout << '\n';
+//		}
+//
+//		return;
+//	}
+//
+//	for (int i = start; i < alpha.size(); i++)
+//	{
+//		answer[index] = alpha[i];
+//		go(index + 1, i + 1, count);
+//	}
+//}
+//
+//int main()
+//{
+//	cin >> n >> m;
+//
+//	for (int i = 0; i < m; i++)
+//	{
+//		char temp;
+//		cin >> temp;
+//		alpha.push_back(temp);
+//	}
+//
+//	sort(alpha.begin(), alpha.end());
+//
+//	go(0, 0, n);
+//}
 
 // 퇴사 : https://www.acmicpc.net/problem/14501
 
