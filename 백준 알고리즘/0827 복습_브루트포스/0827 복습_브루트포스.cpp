@@ -702,6 +702,59 @@
 
 // 외판원 순회2 : https://www.acmicpc.net/problem/10971
 
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//
+//vector<vector<int>> board;
+//vector<int> ans;
+//int n;
+//int minValue = 2147483647;
+//
+//void check()
+//{
+//	int temp = 0;
+//	for (int i = 0; i < n - 1; i++)
+//	{
+//		if (board[ans[i]][ans[i + 1]] == 0)
+//			return;
+//
+//		temp += board[ans[i]][ans[i + 1]];
+//	}
+//
+//	if (board[ans.back()][ans.front()] == 0) return;
+//
+//	temp += board[ans.back()][ans.front()];
+//
+//	minValue = min(temp, minValue);
+//}
+//
+//int main()
+//{
+//	cin >> n;
+//
+//	board.resize(n);
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		ans.push_back(i);
+//		for (int j = 0; j < n; j++)
+//		{
+//			int temp;
+//			cin >> temp;
+//			board[i].push_back(temp);
+//		}
+//	}
+//
+//	do
+//	{
+//		check();
+//	} while (next_permutation(ans.begin(), ans.end()));
+//
+//	cout << minValue;
+//}
+
 // 로또 : https://www.acmicpc.net/problem/6603
 
 ////////////////////////////////////////////////////////////
