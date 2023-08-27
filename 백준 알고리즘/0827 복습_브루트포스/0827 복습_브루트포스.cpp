@@ -764,3 +764,8 @@
 // 부분수열의 합 : https://www.acmicpc.net/problem/1182
 
 // 종이 조각 : https://www.acmicpc.net/problem/14391
+
+int main()
+{
+
+}

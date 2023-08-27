@@ -16,6 +16,9 @@
 답:3
 */
 
+// 외판원 순회2 : https://www.acmicpc.net/problem/10971
+
+
 int main()
 {
 
