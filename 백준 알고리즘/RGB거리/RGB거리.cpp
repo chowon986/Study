@@ -41,7 +41,7 @@ int main()
 	
 	for (int i = 0; i <= n; i++)
 	{                   
-		d[i].resize(1001);
+		d[i].resize(3);
 	}
 
 	for (int i = 0; i < n; i++)
