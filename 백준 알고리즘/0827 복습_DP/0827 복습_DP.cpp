@@ -103,7 +103,7 @@
 
 // 합분해 : https://www.acmicpc.net/problem/2225
 
-//int main()
-//{
-//
-//}
+int main()
+{
+
+}
