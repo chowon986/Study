@@ -1,206 +1,441 @@
-﻿#include <iostream>
+﻿// 이전 풀이
+
+//#include <iostream>
+//using namespace std;
+//
+//struct Node
+//{
+//	int Data;
+//	Node* Next;
+//};
+//
+//class Deque
+//{
+//public:
+//	void push_front(int Num);
+//	void push_back(int Num);
+//	void pop_front();
+//	void pop_back();
+//	int size();
+//	bool empty();
+//	int front();
+//	int back();
+//
+//public:
+//	Node* Head;
+//};
+//
+//void Deque::push_front(int Num)
+//{
+//	Node* NewNode = new Node();
+//	NewNode->Data = Num;
+//
+//	if (Head == nullptr)
+//	{
+//		Head = NewNode;
+//		return;
+//	}
+//
+//	Node* NextNode = Head;
+//	Head = NewNode;
+//	Head->Next = NextNode;
+//}
+//
+//void Deque::push_back(int Num)
+//{
+//	Node* CurNode = Head;
+//	Node* NewNode = new Node();
+//	NewNode->Data = Num;
+//
+//	if (Head != nullptr)
+//	{
+//		while (CurNode->Next != nullptr)
+//		{
+//			CurNode = CurNode->Next;
+//		}
+//
+//		CurNode->Next = NewNode;
+//	}
+//	else
+//	{
+//		Head = NewNode;
+//	}
+//}
+//
+//void Deque::pop_front()
+//{
+//	if (Head == nullptr)
+//	{
+//		cout << -1 << endl;
+//		return;
+//	}
+//
+//	cout << Head->Data << endl;
+//	Node* NextNode = Head->Next;
+//	delete Head;
+//	Head = NextNode;
+//}
+//
+//void Deque::pop_back()
+//{
+//	if (Head == nullptr)
+//	{
+//		cout << -1 << endl;
+//		return;
+//	}
+//
+//	Node* CurNode = Head;
+//	Node* PrevNode = Head;
+//
+//	while (CurNode->Next != nullptr)
+//	{
+//		PrevNode = CurNode;
+//		CurNode = CurNode->Next;
+//	}
+//
+//	cout << CurNode->Data << endl;
+//	PrevNode->Next = nullptr;
+//	if (CurNode == Head)
+//	{
+//		Head = nullptr;
+//	}
+//
+//	delete CurNode;
+//}
+//
+//int Deque::size()
+//{
+//	Node* CurNode = Head;
+//	int Count = 1;
+//
+//	if (CurNode == nullptr)
+//		return 0;
+//
+//	while (CurNode->Next != nullptr)
+//	{
+//		CurNode = CurNode->Next;
+//		++Count;
+//	}
+//
+//	return Count;
+//}
+//
+//bool Deque::empty()
+//{
+//	if (size() > 0)
+//		return 0;
+//	else return 1;
+//}
+//
+//int Deque::front()
+//{
+//	if (Head == nullptr)
+//	{
+//		return -1;
+//	}
+//
+//	return Head->Data;
+//}
+//
+//int Deque::back()
+//{
+//	Node* CurNode = Head;
+//	if (CurNode == nullptr)
+//		return -1;
+//
+//	while (CurNode->Next != nullptr)
+//	{
+//		CurNode = CurNode->Next;
+//	}
+//
+//	return CurNode->Data;
+//}
+//
+//int main()
+//{
+//	ios_base::sync_with_stdio(false);
+//	cin.tie(nullptr);
+//
+//	Deque* NewDeque = new Deque();
+//
+//	int N;
+//	cin >> N;
+//
+//	for (int i = 0; i < N; i++)
+//	{
+//		string Word;
+//		cin >> Word;
+//
+//		if (Word == "push_back")
+//		{
+//			int N;
+//			cin >> N;
+//
+//			NewDeque->push_back(N);
+//		}
+//		else if (Word == "push_front")
+//		{
+//			int N;
+//			cin >> N;
+//
+//			NewDeque->push_front(N);
+//		}
+//		else if (Word == "pop_front")
+//		{
+//			NewDeque->pop_front();
+//		}
+//		else if (Word == "pop_back")
+//		{
+//			NewDeque->pop_back();
+//		}
+//		else if (Word == "size")
+//		{
+//			cout << NewDeque->size() << endl;
+//		}
+//		else if (Word == "empty")
+//		{
+//			cout << NewDeque->empty() << endl;
+//		}
+//		else if (Word == "front")
+//		{
+//			cout << NewDeque->front() << endl;;
+//		}
+//		else if (Word == "back")
+//		{
+//			cout << NewDeque->back() << endl;;
+//		}
+//	}
+//}
+
+#include <iostream>
+#include <string>
 using namespace std;
 
-struct Node
+struct myNode
 {
-	int Data;
-	Node* Next;
+	int data;
+	myNode* nextNode;
 };
 
-class Deque
+class deque
 {
 public:
-	void push_front(int Num);
-	void push_back(int Num);
-	void pop_front();
-	void pop_back();
-	int size();
-	bool empty();
-	int front();
-	int back();
-
-public:
-	Node* Head;
-};
-
-void Deque::push_front(int Num)
-{
-	Node* NewNode = new Node();
-	NewNode->Data = Num;
-
-	if (Head == nullptr)
+	void push_front(int data)
 	{
-		Head = NewNode;
-		return;
+		if (head == nullptr)
+		{
+			myNode* newNode = new myNode();
+			newNode->data = data;
+			head = newNode;
+			return;
+		}
+		else
+		{
+			myNode* newNode = new myNode();
+			newNode->data = data;
+			newNode->nextNode = head;
+			head = newNode;
+		}
 	}
 
-	Node* NextNode = Head;
-	Head = NewNode;
-	Head->Next = NextNode;
-}
-
-void Deque::push_back(int Num)
-{
-	Node* CurNode = Head;
-	Node* NewNode = new Node();
-	NewNode->Data = Num;
-
-	if (Head != nullptr)
+	void push_back(int data)
 	{
-		while (CurNode->Next != nullptr)
+		if (head == nullptr)
 		{
-			CurNode = CurNode->Next;
+			myNode* newNode = new myNode();
+			newNode->data = data;
+			head = newNode;
+			return;
+		}
+		else
+		{
+			myNode* newNode = new myNode();
+			newNode->data = data;
+
+			myNode* curNode = head;
+
+			while (curNode->nextNode != nullptr)
+			{
+				curNode = curNode->nextNode;
+			}
+
+			curNode->nextNode = newNode;
+		}
+	}
+
+	void pop_front()
+	{
+		if (head == nullptr)
+		{
+			cout << -1 << '\n';
+			return;
 		}
 
-		CurNode->Next = NewNode;
+		else
+		{
+			cout << head->data << '\n';
+
+			if (head->nextNode != nullptr)
+			{
+				head = head->nextNode;
+			}
+			else
+			{
+				head = nullptr;
+			}
+		}
 	}
-	else
+	
+	void pop_back()
 	{
-		Head = NewNode;
-	}
-}
+		if (head == nullptr)
+		{
+			cout << -1 << '\n';
+			return;
+		}
 
-void Deque::pop_front()
-{
-	if (Head == nullptr)
+		else
+		{
+			myNode* curNode = head;
+			myNode* prevNode = head;
+
+			while (curNode->nextNode != nullptr)
+			{
+				prevNode = curNode;
+				curNode = curNode->nextNode;
+			}
+
+			cout << curNode->data << '\n';
+
+			if (prevNode == curNode)
+			{
+				head = nullptr;
+			}
+			else
+			{
+				prevNode->nextNode = nullptr;
+			}
+		}
+	}
+
+	void size()
 	{
-		cout << -1 << endl;
-		return;
+
+		if (head == nullptr)
+		{
+			cout << 0 << '\n';
+			return;
+		}
+
+		myNode* curNode = head;
+		int count = 1;
+
+		while (curNode->nextNode != nullptr)
+		{
+			curNode = curNode->nextNode;
+			++count;
+		}
+
+		cout << count << '\n';
 	}
 
-	cout << Head->Data << endl;
-	Node* NextNode = Head->Next;
-	delete Head;
-	Head = NextNode;
-}
-
-void Deque::pop_back()
-{
-	if (Head == nullptr)
+	void empty()
 	{
-		cout << -1 << endl;
-		return;
+		if (head == nullptr)
+			cout << 1 << '\n';
+		else
+			cout << 0 << '\n';
 	}
 
-	Node* CurNode = Head;
-	Node* PrevNode = Head;
-
-	while (CurNode->Next != nullptr)
+	void front()
 	{
-		PrevNode = CurNode;
-		CurNode = CurNode->Next;
+		if (head == nullptr)
+		{
+			cout << -1 << '\n';
+			return;
+		}
+
+		else
+		{
+			cout << head->data << '\n';
+		}
 	}
 
-	cout << CurNode->Data << endl;
-	PrevNode->Next = nullptr;
-	if (CurNode == Head)
+	void back()
 	{
-		Head = nullptr;
+		if (head == nullptr)
+		{
+			cout << -1 << '\n';
+			return;
+		}
+
+		else
+		{
+			myNode* curNode = head;
+
+			while (curNode->nextNode != nullptr)
+			{
+				curNode = curNode->nextNode;
+			}
+
+			cout << curNode->data << '\n';
+		}
 	}
-
-	delete CurNode;
-}
-
-int Deque::size()
-{
-	Node* CurNode = Head;
-	int Count = 1;
-
-	if (CurNode == nullptr)
-		return 0;
-
-	while (CurNode->Next != nullptr)
-	{
-		CurNode = CurNode->Next;
-		++Count;
-	}
-
-	return Count;
-}
-
-bool Deque::empty()
-{
-	if (size() > 0)
-		return 0;
-	else return 1;
-}
-
-int Deque::front()
-{
-	if (Head == nullptr)
-	{
-		return -1;
-	}
-
-	return Head->Data;
-}
-
-int Deque::back()
-{
-	Node* CurNode = Head;
-	if (CurNode == nullptr)
-		return -1;
-
-	while (CurNode->Next != nullptr)
-	{
-		CurNode = CurNode->Next;
-	}
-
-	return CurNode->Data;
-}
+	
+private:
+	myNode* head;
+};
 
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(nullptr);
 
-	Deque* NewDeque = new Deque();
+	int n;
+	cin >> n;
 
-	int N;
-	cin >> N;
+	deque* newDeque = new deque();
 
-	for (int i = 0; i < N; i++)
+	for (int i = 0; i < n; i++)
 	{
-		string Word;
-		cin >> Word;
+		string word;
+		cin >> word;
 
-		if (Word == "push_back")
+		if (word == "push_front")
 		{
-			int N;
-			cin >> N;
-
-			NewDeque->push_back(N);
+			int temp;
+			cin >> temp;
+			newDeque->push_front(temp);
 		}
-		else if (Word == "push_front")
+		else if (word == "push_back")
 		{
-			int N;
-			cin >> N;
-
-			NewDeque->push_front(N);
+			int temp;
+			cin >> temp;
+			newDeque->push_back(temp);
 		}
-		else if (Word == "pop_front")
+		else if (word == "pop_back")
 		{
-			NewDeque->pop_front();
+			newDeque->pop_back();
 		}
-		else if (Word == "pop_back")
+		else if (word == "pop_front")
 		{
-			NewDeque->pop_back();
+			newDeque->pop_front();
 		}
-		else if (Word == "size")
+		else if (word == "size")
 		{
-			cout << NewDeque->size() << endl;
+			newDeque->size();
 		}
-		else if (Word == "empty")
+		else if (word == "empty")
 		{
-			cout << NewDeque->empty() << endl;
+			newDeque->empty();
 		}
-		else if (Word == "front")
+		else if (word == "front")
 		{
-			cout << NewDeque->front() << endl;;
+			newDeque->front();
 		}
-		else if (Word == "back")
+		else if (word == "back")
 		{
-			cout << NewDeque->back() << endl;;
+			newDeque->back();
 		}
 	}
 }
