@@ -211,6 +211,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "시뮬레이션", "시뮬�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "배열 돌리기 3", "배열 돌리기 3\배열 돌리기 3.vcxproj", "{D21307C4-4DE5-43DF-A9C4-60699368FB02}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "배열 돌리기 1", "배열 돌리기 1\배열 돌리기 1.vcxproj", "{24300950-363C-434D-A22D-B4C3A272BA41}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -923,6 +925,14 @@ Global
 		{D21307C4-4DE5-43DF-A9C4-60699368FB02}.Release|x64.Build.0 = Release|x64
 		{D21307C4-4DE5-43DF-A9C4-60699368FB02}.Release|x86.ActiveCfg = Release|Win32
 		{D21307C4-4DE5-43DF-A9C4-60699368FB02}.Release|x86.Build.0 = Release|Win32
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Debug|x64.ActiveCfg = Debug|x64
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Debug|x64.Build.0 = Debug|x64
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Debug|x86.ActiveCfg = Debug|Win32
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Debug|x86.Build.0 = Debug|Win32
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Release|x64.ActiveCfg = Release|x64
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Release|x64.Build.0 = Release|x64
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Release|x86.ActiveCfg = Release|Win32
+		{24300950-363C-434D-A22D-B4C3A272BA41}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1023,6 +1033,7 @@ Global
 		{B7689943-2E9D-45D2-B65B-F30B0F3CD93B} = {83F8BE67-CDB2-4967-BB62-7BDB6165FD65}
 		{883E2C71-6796-4EDD-956B-E754E3060E8A} = {83F8BE67-CDB2-4967-BB62-7BDB6165FD65}
 		{D21307C4-4DE5-43DF-A9C4-60699368FB02} = {2DD01DD8-C3F4-46F9-936F-D932FF85B882}
+		{24300950-363C-434D-A22D-B4C3A272BA41} = {2DD01DD8-C3F4-46F9-936F-D932FF85B882}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}

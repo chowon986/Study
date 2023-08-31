@@ -130,6 +130,9 @@ void SwitchArray(vector<vector<int>>& b, string direction)
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(nullptr);
+
 	cin >> n >> m >> r;
 
 	vector<vector<int>> board;
