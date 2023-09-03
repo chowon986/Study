@@ -79,55 +79,62 @@
 //	cout << sum % 10007;
 //}
 
+//#include <iosteam>
+//using namespace std;
+//
+//int d[1001][10];
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//
+//	// i번째 자리 수의 값은 j
+//	// i-1번째 자리 수의 값은 k
+//	// 문제 규칙 상 k <= j여야 함
+//	// d[i][j]는 길이가 i이고, 마지막 숫자가 j인 오르막 수의 개수
+//
+//	for (int i = 0; i < 10; i++)
+//		d[0][i] = 1;
+//
+//	int sum = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		for (int j = 0; j < 10; j++)
+//		{
+//			for (int k = 0; k <= j; k++)
+//			{
+//				d[i][j] += d[i - 1][k] % 10007;
+//			}
+//		}
+//	}
+//
+//	cout << d[n][9] % 10007;
+//}
 
 #include <iostream>
-#include <vector>
-#include <algorithm>
 using namespace std;
+
+int d[1001][10];
 
 int main()
 {
 	int n;
 	cin >> n;
 
-	vector<int> numbers;
+	for (int i = 0; i < 10; i++)
+		d[0][i] = 1;
 
-	for (int i = 0; i < n; i++)
+	for (int i = 1; i <= n; i++)
 	{
-		numbers.push_back(0);
-	}
-
-	int count = 0;
-
-	while (true)
-	{
-		bool isTrue = true;
-		if (numbers.front() == 10) break;
-
-		++numbers.back();
-
-
-		for (int i = n - 1; i > 0; i--)
+		for (int j = 0; j < 10; j++)
 		{
-			if (numbers[i] == 10)
+			for (int k = 0; k <= j; k++)
 			{
-				++numbers[i - 1];
-				numbers[i] = 0;
+				d[i][j] += d[i - 1][k] % 10007;
 			}
 		}
-
-		for (int i = n - 1; i > 0; i--)
-		{
-			if (numbers[i] < numbers[i - 1])
-			{
-				isTrue = false;
-				break;
-			}
-		}
-
-		if(isTrue) ++count;
 	}
 
-	int ans =  n == 1 ? count : count + 1;
-	cout << ans % 10007;
+	cout << d[n][9] % 10007;
 }
