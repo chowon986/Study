@@ -75,21 +75,15 @@ int main()
 		a.push_back(temp);
 	}
 
-	int num;
-
 	vector<int> dec(n, 1);
 	vector<int> inc(n, 1);
 
 	for (int i = 0; i < n; i++)
 	{
-		num = a[i];
-
 		for (int j = i - 1; j >= 0; j--)
 		{
 			if (a[i] > a[j])
-			{
 				inc[i] = max(inc[i], inc[j] + 1);
-			}
 		}
 	}
 
@@ -100,20 +94,14 @@ int main()
 		for (int j = i - 1; j >= 0; j--)
 		{
 			if (a[i] > a[j])
-			{
 				dec[i] = max(dec[i], dec[j] + 1);
-			}
 		}
 	}
-
-	reverse(dec.begin(), dec.end());
 
 	int maxValue = -1;
 
 	for (int i = 0; i < n; i++)
-	{
 		maxValue = max(maxValue, inc[i] + dec[n - i - 1]);
-	}
 
 	cout << maxValue - 1;
 }
