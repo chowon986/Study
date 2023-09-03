@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "이것이 취업을 위한 코딩테스트다", "이것이 취업을 위한 코딩테스트다\이것이 취업을 위한 코딩테스트다.vcxproj", "{B6904809-0C26-48A5-9E9A-051E724E6409}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00 그리디", "00 그리디", "{E5F553F7-BD36-4C2D-A2F5-870568B03CCE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "00 거스름돈", "00 거스름돈\00 거스름돈.vcxproj", "{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Debug|x64.ActiveCfg = Debug|x64
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Debug|x64.Build.0 = Debug|x64
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Debug|x86.Build.0 = Debug|Win32
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Release|x64.ActiveCfg = Release|x64
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Release|x64.Build.0 = Release|x64
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Release|x86.ActiveCfg = Release|Win32
+		{B6904809-0C26-48A5-9E9A-051E724E6409}.Release|x86.Build.0 = Release|Win32
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Debug|x64.ActiveCfg = Debug|x64
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Debug|x64.Build.0 = Debug|x64
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Debug|x86.ActiveCfg = Debug|Win32
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Debug|x86.Build.0 = Debug|Win32
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Release|x64.ActiveCfg = Release|x64
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Release|x64.Build.0 = Release|x64
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Release|x86.ActiveCfg = Release|Win32
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3A2109B8-6F28-45DF-AA07-24B47D8B4ACD} = {E5F553F7-BD36-4C2D-A2F5-870568B03CCE}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F9C604E1-CAFE-4412-B1AB-AC9D9C27BDFA}
+	EndGlobalSection
+EndGlobal
