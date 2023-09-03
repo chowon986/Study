@@ -18,6 +18,10 @@
 
 // 외판원 순회2 : https://www.acmicpc.net/problem/10971
 
+// 합분해 : https://www.acmicpc.net/problem/2225
+
+
+
 
 int main()
 {
