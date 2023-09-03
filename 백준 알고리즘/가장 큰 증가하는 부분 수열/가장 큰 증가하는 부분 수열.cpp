@@ -47,37 +47,83 @@
 //	cout << Max;
 //}
 
+// ??
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//
+//	vector<int> numbers;
+//	vector<int> d(n + 1, 1);
+//
+//	int maxValue = -1;
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		int temp;
+//		cin >> temp;
+//		numbers.push_back(temp);
+//	}
+//
+//	for (int i = 0; i < n; i++)
+//	{
+//		for (int j = i; j >= 0; j--)
+//		{
+//			if (numbers[i] > numbers[j])
+//			{
+//				d[i] = max(d[i], d[j] + 1);
+//			}
+//		}
+//
+//		maxValue = max(maxValue, d[i]);
+//	}
+//
+//	cout << maxValue;
+//}
+
+// 가장 큰 증가하는 부분 수열 : https://www.acmicpc.net/problem/11055
+
 #include <iostream>
-#include <vector>
 using namespace std;
+
+int a[1001];
+int d[1001];
 
 int main()
 {
 	int n;
 	cin >> n;
 
-	vector<int> numbers;
-	vector<int> d(n + 1, 1);
+	for (int i = 0; i < n; i++)
+	{
+		int temp;
+		cin >> temp;
+		a[i] = temp;
+	}
+
+	d[0] = a[0];
+
+	for (int i = 1; i < n; i++)
+	{
+		d[i] = a[i];
+		for (int j = i - 1; j >= 0; j--)
+		{
+			if (a[i] > a[j])
+			{
+				d[i] = max(d[i], a[i] + d[j]);
+			}
+		}
+	}
 
 	int maxValue = -1;
 
 	for (int i = 0; i < n; i++)
 	{
-		int temp;
-		cin >> temp;
-		numbers.push_back(temp);
-	}
-
-	for (int i = 0; i < n; i++)
-	{
-		for (int j = i; j >= 0; j--)
-		{
-			if (numbers[i] > numbers[j])
-			{
-				d[i] = max(d[i], d[j] + 1);
-			}
-		}
-
 		maxValue = max(maxValue, d[i]);
 	}
 
