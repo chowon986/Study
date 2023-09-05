@@ -44,3 +44,10 @@
 //}
 
 // 이진 탐색으로 풀기
+#include <iostream>
+using namespace std;
+
+int main()
+{
+
+}
