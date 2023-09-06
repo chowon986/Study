@@ -75,6 +75,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 플로이드 워셜 알�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 미래 도시", "02 미래 도시\02 미래 도시.vcxproj", "{DCF2F7D7-9B79-4831-9847-EE34F2BAD955}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 퀵정렬", "02 퀵정렬\02 퀵정렬.vcxproj", "{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -315,6 +317,14 @@ Global
 		{DCF2F7D7-9B79-4831-9847-EE34F2BAD955}.Release|x64.Build.0 = Release|x64
 		{DCF2F7D7-9B79-4831-9847-EE34F2BAD955}.Release|x86.ActiveCfg = Release|Win32
 		{DCF2F7D7-9B79-4831-9847-EE34F2BAD955}.Release|x86.Build.0 = Release|Win32
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Debug|x64.ActiveCfg = Debug|x64
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Debug|x64.Build.0 = Debug|x64
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Debug|x86.ActiveCfg = Debug|Win32
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Debug|x86.Build.0 = Debug|Win32
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Release|x64.ActiveCfg = Release|x64
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Release|x64.Build.0 = Release|x64
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Release|x86.ActiveCfg = Release|Win32
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -348,6 +358,7 @@ Global
 		{5D4D472B-989D-4BE4-A57F-32D43578F7DB} = {2E8E76F8-E7D1-40B1-A60F-121B433F45A6}
 		{53D05C94-3790-4AED-B286-3DEC4F53DD98} = {2E8E76F8-E7D1-40B1-A60F-121B433F45A6}
 		{DCF2F7D7-9B79-4831-9847-EE34F2BAD955} = {2E8E76F8-E7D1-40B1-A60F-121B433F45A6}
+		{7B9469D5-9CAE-445E-B3C4-CE277F5511BD} = {F8D9324F-4DF0-4D89-A428-5B123659D860}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9C604E1-CAFE-4412-B1AB-AC9D9C27BDFA}
