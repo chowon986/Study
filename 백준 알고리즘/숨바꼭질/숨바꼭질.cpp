@@ -73,21 +73,7 @@ using namespace std;
 
 vector<bool> isVisited;
 vector<int> dis;
-vector<int> prevPos;
 int n, k;
-
-void PrintMovePos(int now)
-{
-	if (now == n)
-	{
-		cout << n << ' ';
-		return;
-	}
-
-	PrintMovePos(prevPos[now]);
-
-	cout << now << ' ';
-}
 
 void bfs(int start)
 {
@@ -102,7 +88,6 @@ void bfs(int start)
 		if (now == k)
 		{
 			cout << dis[now] << '\n';
-			PrintMovePos(now);
 			return;
 		}
 
@@ -115,7 +100,6 @@ void bfs(int start)
 				q.push(now + 1);
 				isVisited[now + 1] = true;
 				dis[now + 1] = dis[now] + 1;
-				prevPos[now + 1] = now;
 			}
 		}
 
@@ -126,7 +110,6 @@ void bfs(int start)
 				q.push(now - 1);
 				isVisited[now - 1] = true;
 				dis[now - 1] = dis[now] + 1;
-				prevPos[now - 1] = now;
 			}
 		}
 
@@ -137,7 +120,6 @@ void bfs(int start)
 				q.push(now * 2);
 				isVisited[now * 2] = true;
 				dis[now * 2] = dis[now] + 1;
-				prevPos[now * 2] = now;
 			}
 		}
 	}
@@ -149,7 +131,6 @@ int main()
 
 	isVisited.resize(200001, false);
 	dis.resize(200001);
-	prevPos.resize(200001);
 
 	bfs(n);
 }
