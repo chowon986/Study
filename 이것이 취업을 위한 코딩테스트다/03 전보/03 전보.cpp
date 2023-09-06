@@ -1,31 +1,75 @@
 ﻿// 03 전보
 
-#include <iostream>
-#include <vector>
-#include <queue>
+#include <stdio.h>
+#include<iostream>
+#include<vector>
+#include<queue>
 using namespace std;
+#define INF 1e9 // 무한을 의미하는 값으로 10억을 설정
 
-#define INF 1e9
+// 노드의 개수(N), 간선의 개수(M), 시작 노드 번호(Start)
+// 노드의 개수는 최대 100,000개라고 가정
+int n, m, start;
 
-int main()
+vector<pair<int, int> > graph[100001]; // 각 노드에 연결되어 있는 노드에 대한 정보를 담는 배열
+int d[100001]; // 최단 거리 테이블 만들기
+
+void dijkstra(int start)
 {
-	int n, m;
-	cin >> n >> m;
+    priority_queue<pair<int, int>>pq; // 거리, 노드 인덱스
 
-	vector<vector<pair<int, int>>> board(n + 1);
-	vector<int> distance(n + 1, INF);
+    pq.push({ 0, start }); //시작 노드로 가기위한 최단 경로는 0으로 설정하여, 큐에 삽입.
+    d[start] = 0;
 
-	for (int i = 0; i < m; i++)
-	{
-		int a, b, c;
-		cin >> a >> b >> c;
-		board[a].push_back({ b,c });
-	}
+    while (!pq.empty())
+    {
+        int dist = -pq.top().first; //현재 노드까지의 비용
+        int now = pq.top().second; // 현재 노드
+        pq.pop();
 
-	priority_queue<pair<int, int>> pq;
+        if (d[now] < dist) // 이미 최단경로를 체크한 노드인 경우 패스
+            continue;
 
-	int start;
-	cin >> start;
+        for (int i = 0; i < graph[now].size(); i++)
+        {
+            int cost = dist + graph[now][i].second; // 거쳐서 가는 노드의 비용을 계산
+            // 현재노드까지 비용 + 다음 노드 비용
+            if (cost < d[graph[now][i].first]) // 비용이 더 작다면 최단경로 테이블 값을 갱신.
+            {
+                d[graph[now][i].first] = cost;
+                pq.push(make_pair(-cost, graph[now][i].first));
+            }
+        }
+    }
+}
 
-	pq.push({ 0, start });
+int main(void)
+{
+    cin >> n >> m >> start;
+
+    // 모든 간선 정보를 입력받기
+    for (int i = 0; i < m; i++)
+    {
+        int a, b, c;
+        cin >> a >> b >> c;
+        // a번 노드에서 b번 노드로 가는 시간이 c라는 의미
+        graph[a].push_back({ b, c });
+    }
+
+    // 최단 거리 테이블을 모두 무한으로 초기화
+    fill(d, d + 100001, INF);
+
+    // 다익스트라 알고리즘을 수행
+    dijkstra(start);
+
+    int maxDistance = 0;
+
+
+    for (int i : d)
+    {
+        if(i != INF)
+            maxDistance = max(maxDistance, i);
+    }
+
+    cout << maxDistance;
 }
