@@ -215,6 +215,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "배열 돌리기 1", "배�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "배열 돌리기 2", "배열 돌리기 2\배열 돌리기 2.vcxproj", "{062408B7-C41E-4F45-A45F-9744A0E5AAFB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "나이트의 이동", "나이트의 이동\나이트의 이동.vcxproj", "{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -943,6 +945,14 @@ Global
 		{062408B7-C41E-4F45-A45F-9744A0E5AAFB}.Release|x64.Build.0 = Release|x64
 		{062408B7-C41E-4F45-A45F-9744A0E5AAFB}.Release|x86.ActiveCfg = Release|Win32
 		{062408B7-C41E-4F45-A45F-9744A0E5AAFB}.Release|x86.Build.0 = Release|Win32
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Debug|x64.ActiveCfg = Debug|x64
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Debug|x64.Build.0 = Debug|x64
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Debug|x86.Build.0 = Debug|Win32
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Release|x64.ActiveCfg = Release|x64
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Release|x64.Build.0 = Release|x64
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Release|x86.ActiveCfg = Release|Win32
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1045,6 +1055,7 @@ Global
 		{D21307C4-4DE5-43DF-A9C4-60699368FB02} = {2DD01DD8-C3F4-46F9-936F-D932FF85B882}
 		{24300950-363C-434D-A22D-B4C3A272BA41} = {2DD01DD8-C3F4-46F9-936F-D932FF85B882}
 		{062408B7-C41E-4F45-A45F-9744A0E5AAFB} = {2DD01DD8-C3F4-46F9-936F-D932FF85B882}
+		{FA5EBEBA-07F0-43E4-BB7A-71DB5897E797} = {D43E8248-1D78-4792-8F7C-1393AD1298D4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
