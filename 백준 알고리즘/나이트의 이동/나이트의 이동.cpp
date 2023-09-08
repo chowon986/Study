@@ -10,8 +10,6 @@ int a, b, c, d, e;
 int dy[8] = { 1,2,2,1,-1,-2,-2,-1 };
 int dx[8] = { -2,-1,1,2,2,1,-1,-2 };
 
-
-
 void bfs(int cx, int cy, int size)
 {
 	vector<vector<int>> board(size, vector<int>(size));
