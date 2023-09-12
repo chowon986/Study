@@ -18,8 +18,8 @@ int main()
 	for (int i = 4; i <= MAX; i++)
 	{
 		d[i][1] = ((d[i - 1][2] % MOD) + (d[i - 1][3] % MOD)) % MOD;
-		d[i][2] = ((d[i - 1][1] % MOD) + (d[i - 1][3] % MOD)) % MOD;
-		d[i][3] = ((d[i - 1][1] % MOD) + (d[i - 1][2] % MOD)) % MOD;
+		d[i][2] = ((d[i - 2][1] % MOD) + (d[i - 2][3] % MOD)) % MOD;
+		d[i][3] = ((d[i - 3][1] % MOD) + (d[i - 3][2] % MOD)) % MOD;
 	}
 
 	for (int i = 0; i < n; i++)
