@@ -243,6 +243,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 긴 증가하�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 긴 증가하는 부분 수열 4", "[DP] 가장 긴 증가하는 부분 수열 4\[DP] 가장 긴 증가하는 부분 수열 4.vcxproj", "{CBA916B9-73C1-44C3-A297-F936BC761235}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 연속합", "[DP] 연속합\[DP] 연속합.vcxproj", "{FCD49CA2-3168-4ABE-AD75-46123248CB71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1075,6 +1077,14 @@ Global
 		{CBA916B9-73C1-44C3-A297-F936BC761235}.Release|x64.Build.0 = Release|x64
 		{CBA916B9-73C1-44C3-A297-F936BC761235}.Release|x86.ActiveCfg = Release|Win32
 		{CBA916B9-73C1-44C3-A297-F936BC761235}.Release|x86.Build.0 = Release|Win32
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Debug|x64.ActiveCfg = Debug|x64
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Debug|x64.Build.0 = Debug|x64
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Debug|x86.ActiveCfg = Debug|Win32
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Debug|x86.Build.0 = Debug|Win32
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Release|x64.ActiveCfg = Release|x64
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Release|x64.Build.0 = Release|x64
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Release|x86.ActiveCfg = Release|Win32
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1191,6 +1201,7 @@ Global
 		{44FB1046-AD2E-43DF-8F11-E2DE90849D3E} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{F48DE9B8-ABA5-4529-A7BA-AC6F0C250867} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{CBA916B9-73C1-44C3-A297-F936BC761235} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
+		{FCD49CA2-3168-4ABE-AD75-46123248CB71} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
