@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int d[91][2];
+long long d[91][2];
 
 int main()
 {
