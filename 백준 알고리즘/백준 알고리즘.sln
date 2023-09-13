@@ -269,6 +269,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 긴 감소하�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 긴 바이토닉 부분 수열", "[DP] 가장 긴 바이토닉 부분 수열\[DP] 가장 긴 바이토닉 부분 수열.vcxproj", "{95164457-8E44-4000-B778-D32EB0BB7EA4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 연속합 2", "[DP] 연속합 2\[DP] 연속합 2.vcxproj", "{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 타일 채우기", "[DP] 타일 채우기\[DP] 타일 채우기.vcxproj", "{FE482BD1-1B35-49B1-951F-48BC10E89DB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1205,6 +1209,22 @@ Global
 		{95164457-8E44-4000-B778-D32EB0BB7EA4}.Release|x64.Build.0 = Release|x64
 		{95164457-8E44-4000-B778-D32EB0BB7EA4}.Release|x86.ActiveCfg = Release|Win32
 		{95164457-8E44-4000-B778-D32EB0BB7EA4}.Release|x86.Build.0 = Release|Win32
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Debug|x64.ActiveCfg = Debug|x64
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Debug|x64.Build.0 = Debug|x64
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Debug|x86.ActiveCfg = Debug|Win32
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Debug|x86.Build.0 = Debug|Win32
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Release|x64.ActiveCfg = Release|x64
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Release|x64.Build.0 = Release|x64
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Release|x86.ActiveCfg = Release|Win32
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24}.Release|x86.Build.0 = Release|Win32
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Debug|x64.ActiveCfg = Debug|x64
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Debug|x64.Build.0 = Debug|x64
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Debug|x86.ActiveCfg = Debug|Win32
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Debug|x86.Build.0 = Debug|Win32
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Release|x64.ActiveCfg = Release|x64
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Release|x64.Build.0 = Release|x64
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Release|x86.ActiveCfg = Release|Win32
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1334,6 +1354,8 @@ Global
 		{22C667C2-DB23-4B8A-A258-F7EF06C11308} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{8BEED486-9607-401A-A319-D0AF61AAC6C8} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{95164457-8E44-4000-B778-D32EB0BB7EA4} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
+		{9D4FF43E-8627-4041-A7F7-B43DE70F2E24} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
+		{FE482BD1-1B35-49B1-951F-48BC10E89DB7} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
