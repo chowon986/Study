@@ -285,6 +285,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[큐와 그래프] DFS와 B
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[큐와 그래프] 연결 요소의 개수", "[큐와 그래프] 연결 요소의 개수\[큐와 그래프] 연결 요소의 개수.vcxproj", "{031E8FE8-A503-4CC4-959C-A6925921AE7A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[큐와 그래프] 이분 그래프", "[큐와 그래프] 이분 그래프\[큐와 그래프] 이분 그래프.vcxproj", "{833BEC56-945D-49A5-A6BD-99F2D8C626DE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1269,6 +1271,14 @@ Global
 		{031E8FE8-A503-4CC4-959C-A6925921AE7A}.Release|x64.Build.0 = Release|x64
 		{031E8FE8-A503-4CC4-959C-A6925921AE7A}.Release|x86.ActiveCfg = Release|Win32
 		{031E8FE8-A503-4CC4-959C-A6925921AE7A}.Release|x86.Build.0 = Release|Win32
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Debug|x64.ActiveCfg = Debug|x64
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Debug|x64.Build.0 = Debug|x64
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Debug|x86.ActiveCfg = Debug|Win32
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Debug|x86.Build.0 = Debug|Win32
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Release|x64.ActiveCfg = Release|x64
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Release|x64.Build.0 = Release|x64
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Release|x86.ActiveCfg = Release|Win32
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1407,6 +1417,7 @@ Global
 		{F8A4B8C3-CD8E-4782-9344-407D59B94552} = {5BBAE374-8F44-44DF-8CB5-95BE54CCEAF0}
 		{47627238-AF9C-49BF-A2A9-020231C95DCF} = {5BBAE374-8F44-44DF-8CB5-95BE54CCEAF0}
 		{031E8FE8-A503-4CC4-959C-A6925921AE7A} = {5BBAE374-8F44-44DF-8CB5-95BE54CCEAF0}
+		{833BEC56-945D-49A5-A6BD-99F2D8C626DE} = {5BBAE374-8F44-44DF-8CB5-95BE54CCEAF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
