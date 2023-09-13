@@ -28,9 +28,10 @@ int main()
 			if (b[i] > b[j])
 			{
 				a[i] = max(a[i], a[j] + 1);
-				maxValue = max(a[i], maxValue);
 			}
 		}
+
+		maxValue = max(a[i], maxValue);
 	}
 
 	cout << maxValue;
