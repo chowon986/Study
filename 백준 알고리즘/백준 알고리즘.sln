@@ -253,6 +253,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 합분해", "[DP] 합�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 1, 2, 3 더하기 3", "[DP] 1, 2, 3 더하기 3\[DP] 1, 2, 3 더하기 3.vcxproj", "{7E53366A-A515-4E96-BCFB-55C5BB6D5DD4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] RGB 거리", "[DP] RGB 거리\[DP] RGB 거리.vcxproj", "{D9451B6F-2902-40F2-B327-345AD43CD60D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1125,6 +1127,14 @@ Global
 		{7E53366A-A515-4E96-BCFB-55C5BB6D5DD4}.Release|x64.Build.0 = Release|x64
 		{7E53366A-A515-4E96-BCFB-55C5BB6D5DD4}.Release|x86.ActiveCfg = Release|Win32
 		{7E53366A-A515-4E96-BCFB-55C5BB6D5DD4}.Release|x86.Build.0 = Release|Win32
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Debug|x64.ActiveCfg = Debug|x64
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Debug|x64.Build.0 = Debug|x64
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Debug|x86.ActiveCfg = Debug|Win32
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Debug|x86.Build.0 = Debug|Win32
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Release|x64.ActiveCfg = Release|x64
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Release|x64.Build.0 = Release|x64
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Release|x86.ActiveCfg = Release|Win32
+		{D9451B6F-2902-40F2-B327-345AD43CD60D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1246,6 +1256,7 @@ Global
 		{CA5FC6CF-07D9-40B9-8D61-89A3A6AD7E2B} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{FB1567EA-9D47-4367-A51B-DCD075067E45} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{7E53366A-A515-4E96-BCFB-55C5BB6D5DD4} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
+		{D9451B6F-2902-40F2-B327-345AD43CD60D} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
