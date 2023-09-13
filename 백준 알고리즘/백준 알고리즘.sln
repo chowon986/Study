@@ -265,6 +265,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 정수 삼각형", "[D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 큰 증가하는 부분 수열", "[DP] 가장 큰 증가하는 부분 수열\[DP] 가장 큰 증가하는 부분 수열.vcxproj", "{22C667C2-DB23-4B8A-A258-F7EF06C11308}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[DP] 가장 긴 감소하는 부분 수열", "[DP] 가장 긴 감소하는 부분 수열\[DP] 가장 긴 감소하는 부분 수열.vcxproj", "{8BEED486-9607-401A-A319-D0AF61AAC6C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1185,6 +1187,14 @@ Global
 		{22C667C2-DB23-4B8A-A258-F7EF06C11308}.Release|x64.Build.0 = Release|x64
 		{22C667C2-DB23-4B8A-A258-F7EF06C11308}.Release|x86.ActiveCfg = Release|Win32
 		{22C667C2-DB23-4B8A-A258-F7EF06C11308}.Release|x86.Build.0 = Release|Win32
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Debug|x64.ActiveCfg = Debug|x64
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Debug|x64.Build.0 = Debug|x64
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Debug|x86.ActiveCfg = Debug|Win32
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Debug|x86.Build.0 = Debug|Win32
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Release|x64.ActiveCfg = Release|x64
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Release|x64.Build.0 = Release|x64
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Release|x86.ActiveCfg = Release|Win32
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1312,6 +1322,7 @@ Global
 		{503B7F22-CBCE-44DB-8E2B-4FBF6D17D464} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{53F22F27-7E8A-4D42-B144-1D1DFF30190A} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 		{22C667C2-DB23-4B8A-A258-F7EF06C11308} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
+		{8BEED486-9607-401A-A319-D0AF61AAC6C8} = {30C66B72-BEAB-49BD-AB53-0AC1DC57DA87}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
