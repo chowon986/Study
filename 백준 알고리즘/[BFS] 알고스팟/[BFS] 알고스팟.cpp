@@ -74,12 +74,13 @@ int main()
 
 			isVisited[nx][ny] = true;
 
+			// 방인 곳을 먼저 방문할 수 있도록 deque의 앞부분에 push
 			if (board[nx][ny] == 0)
 			{
 				TTLcount[nx][ny] = TTLcount[cx][cy];
 				q.push_front({ nx, ny });
 			}
-			else
+			else // 벽을 뚫고 방문할 수 있도록 deque의 뒷부분에 push
 			{
 				TTLcount[nx][ny] = TTLcount[cx][cy] + 1;
 				q.push_back({ nx, ny });
