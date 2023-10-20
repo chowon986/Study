@@ -375,6 +375,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[복습] 연결 요소의 �
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[복습] 토마토", "[복습] 토마토\[복습] 토마토.vcxproj", "{88308249-F7D3-41FA-B7CC-95BF76B3BE69}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "종이자르기", "종이자르기\종이자르기.vcxproj", "{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1671,6 +1673,14 @@ Global
 		{88308249-F7D3-41FA-B7CC-95BF76B3BE69}.Release|x64.Build.0 = Release|x64
 		{88308249-F7D3-41FA-B7CC-95BF76B3BE69}.Release|x86.ActiveCfg = Release|Win32
 		{88308249-F7D3-41FA-B7CC-95BF76B3BE69}.Release|x86.Build.0 = Release|Win32
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Debug|x64.ActiveCfg = Debug|x64
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Debug|x64.Build.0 = Debug|x64
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Debug|x86.ActiveCfg = Debug|Win32
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Debug|x86.Build.0 = Debug|Win32
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x64.ActiveCfg = Release|x64
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x64.Build.0 = Release|x64
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x86.ActiveCfg = Release|Win32
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1854,6 +1864,7 @@ Global
 		{B24D06EC-48EB-4E0F-93DE-35F39C5BF181} = {1FBE5405-D2A6-422C-8CAD-AF6E1702B3A5}
 		{FF2D11CF-57BB-4B69-92D3-F1E789BCF89A} = {1FBE5405-D2A6-422C-8CAD-AF6E1702B3A5}
 		{88308249-F7D3-41FA-B7CC-95BF76B3BE69} = {1FBE5405-D2A6-422C-8CAD-AF6E1702B3A5}
+		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
