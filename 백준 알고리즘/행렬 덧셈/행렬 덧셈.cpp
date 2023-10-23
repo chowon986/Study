@@ -4,16 +4,14 @@
 #include <vector>
 using namespace std;
 
-vector<vector<int>> board1;
-vector<vector<int>> board2;
+vector<vector<int>> board;
 
 int main()
 {
 	int n, m;
 	cin >> n >> m;
 
-	board1.resize(n, vector<int>(m));
-	board2.resize(n, vector<int>(m));
+	board.resize(n, vector<int>(m));
 
 	for (int i = 0; i < n; i++)
 	{
@@ -22,7 +20,7 @@ int main()
 			int temp;
 			cin >> temp;
 
-			board1[i][j] = temp;
+			board[i][j] = temp;
 		}
 	}
 
@@ -33,7 +31,7 @@ int main()
 			int temp;
 			cin >> temp;
 
-			board2[i][j] = temp;
+			board[i][j] += temp;
 		}
 	}
 
@@ -41,7 +39,7 @@ int main()
 	{
 		for (int j = 0; j < m; j++)
 		{
-			cout << board1[i][j] + board2[i][j] << ' ';
+			cout << board[i][j] << ' ';
 		}
 		cout << '\n';
 	}
