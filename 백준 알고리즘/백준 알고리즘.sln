@@ -377,6 +377,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "[복습] 토마토", "[복�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "종이자르기", "종이자르기\종이자르기.vcxproj", "{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4주차", "4주차", "{225EB999-9A62-4921-8287-A083172EC968}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "별 찍기 - 7", "별 찍기 - 7\별 찍기 - 7.vcxproj", "{11D134FB-575D-4223-B01B-767CE39AB34E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1681,6 +1685,14 @@ Global
 		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x64.Build.0 = Release|x64
 		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x86.ActiveCfg = Release|Win32
 		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C}.Release|x86.Build.0 = Release|Win32
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Debug|x64.ActiveCfg = Debug|x64
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Debug|x64.Build.0 = Debug|x64
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Debug|x86.ActiveCfg = Debug|Win32
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Debug|x86.Build.0 = Debug|Win32
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Release|x64.ActiveCfg = Release|x64
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Release|x64.Build.0 = Release|x64
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Release|x86.ActiveCfg = Release|Win32
+		{11D134FB-575D-4223-B01B-767CE39AB34E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1865,6 +1877,7 @@ Global
 		{FF2D11CF-57BB-4B69-92D3-F1E789BCF89A} = {1FBE5405-D2A6-422C-8CAD-AF6E1702B3A5}
 		{88308249-F7D3-41FA-B7CC-95BF76B3BE69} = {1FBE5405-D2A6-422C-8CAD-AF6E1702B3A5}
 		{E14F364C-0A0D-4C84-B8E9-7845EB58DB9C} = {AFFA1575-E7D3-48A9-AEAD-25122FE10B5D}
+		{11D134FB-575D-4223-B01B-767CE39AB34E} = {225EB999-9A62-4921-8287-A083172EC968}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
