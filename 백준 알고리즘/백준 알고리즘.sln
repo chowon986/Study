@@ -407,6 +407,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "블랙잭", "블랙잭\블�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "진법 변환", "진법 변환\진법 변환.vcxproj", "{E8180451-89A6-4F0C-A9AB-E0313D3AA8C1}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "벌집", "벌집\벌집.vcxproj", "{D15E5689-E90B-4D14-8E58-331F158B7697}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1807,6 +1809,14 @@ Global
 		{E8180451-89A6-4F0C-A9AB-E0313D3AA8C1}.Release|x64.Build.0 = Release|x64
 		{E8180451-89A6-4F0C-A9AB-E0313D3AA8C1}.Release|x86.ActiveCfg = Release|Win32
 		{E8180451-89A6-4F0C-A9AB-E0313D3AA8C1}.Release|x86.Build.0 = Release|Win32
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Debug|x64.ActiveCfg = Debug|x64
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Debug|x64.Build.0 = Debug|x64
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Debug|x86.ActiveCfg = Debug|Win32
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Debug|x86.Build.0 = Debug|Win32
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Release|x64.ActiveCfg = Release|x64
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Release|x64.Build.0 = Release|x64
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Release|x86.ActiveCfg = Release|Win32
+		{D15E5689-E90B-4D14-8E58-331F158B7697}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2005,6 +2015,7 @@ Global
 		{6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276} = {E1E5BE5A-150A-4669-B348-3B61A8ED16BB}
 		{9EB9B8C6-14CA-4D40-B18E-3C5AADB80B58} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
 		{E8180451-89A6-4F0C-A9AB-E0313D3AA8C1} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
+		{D15E5689-E90B-4D14-8E58-331F158B7697} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
