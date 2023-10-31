@@ -423,6 +423,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "좌표 정렬하기", "좌�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "좌표 압축", "좌표 압축\좌표 압축.vcxproj", "{EED5A060-A4AD-4BBF-8E83-B5BA1BD2507C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "팰린드롬수", "팰린드롬수\팰린드롬수.vcxproj", "{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1887,6 +1889,14 @@ Global
 		{EED5A060-A4AD-4BBF-8E83-B5BA1BD2507C}.Release|x64.Build.0 = Release|x64
 		{EED5A060-A4AD-4BBF-8E83-B5BA1BD2507C}.Release|x86.ActiveCfg = Release|Win32
 		{EED5A060-A4AD-4BBF-8E83-B5BA1BD2507C}.Release|x86.Build.0 = Release|Win32
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Debug|x64.ActiveCfg = Debug|x64
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Debug|x64.Build.0 = Debug|x64
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Debug|x86.ActiveCfg = Debug|Win32
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Debug|x86.Build.0 = Debug|Win32
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Release|x64.ActiveCfg = Release|x64
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Release|x64.Build.0 = Release|x64
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Release|x86.ActiveCfg = Release|Win32
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2093,6 +2103,7 @@ Global
 		{5343A6B8-1F37-4F77-A556-5FF5C32434D2} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
 		{F8B4A1AB-D850-4311-9DD7-596F39EFD1EE} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
 		{EED5A060-A4AD-4BBF-8E83-B5BA1BD2507C} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
+		{31C6A53D-81E9-4629-AA6C-AD325FFC6A80} = {6CDF20C1-5242-41B9-B4F2-FDCFAA6AC276}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
