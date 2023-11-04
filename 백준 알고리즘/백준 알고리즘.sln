@@ -433,6 +433,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "요새푸스 문제", "요�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "단어 뒤집기2", "단어 뒤집기2\단어 뒤집기2.vcxproj", "{8B80BD2B-B992-4F58-922C-DCCCED811BCB}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "쇠막대기", "쇠막대기\쇠막대기.vcxproj", "{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -1929,6 +1931,14 @@ Global
 		{8B80BD2B-B992-4F58-922C-DCCCED811BCB}.Release|x64.Build.0 = Release|x64
 		{8B80BD2B-B992-4F58-922C-DCCCED811BCB}.Release|x86.ActiveCfg = Release|Win32
 		{8B80BD2B-B992-4F58-922C-DCCCED811BCB}.Release|x86.Build.0 = Release|Win32
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Debug|x64.ActiveCfg = Debug|x64
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Debug|x64.Build.0 = Debug|x64
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Debug|x86.ActiveCfg = Debug|Win32
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Debug|x86.Build.0 = Debug|Win32
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Release|x64.ActiveCfg = Release|x64
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Release|x64.Build.0 = Release|x64
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Release|x86.ActiveCfg = Release|Win32
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2140,6 +2150,7 @@ Global
 		{1C90C058-B72E-484D-AEF8-A75C54BB6196} = {6EF21300-D736-4405-92AD-21B13ECF07B3}
 		{4A06378C-40BC-4E9C-911C-3741BBCEE59F} = {6EF21300-D736-4405-92AD-21B13ECF07B3}
 		{8B80BD2B-B992-4F58-922C-DCCCED811BCB} = {6EF21300-D736-4405-92AD-21B13ECF07B3}
+		{4E0DD9D3-E5EC-43A7-BB0D-250DD6C0943A} = {6EF21300-D736-4405-92AD-21B13ECF07B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
