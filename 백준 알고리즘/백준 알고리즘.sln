@@ -445,7 +445,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "오등큰수", "오등큰�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "후위 표기식", "후위 표기식\후위 표기식.vcxproj", "{2809FBE7-4FFC-4C64-9E4F-5F2BCA54B573}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7주차", "7주차", "{01C961F1-4705-4928-8087-677C9C89F7CF}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7-8주차", "7-8주차", "{01C961F1-4705-4928-8087-677C9C89F7CF}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "숨바꼭질6", "숨바꼭질6\숨바꼭질6.vcxproj", "{EF67C1DC-CEC7-4BFA-B9D9-6DBF56A0C900}"
 EndProject
@@ -454,6 +454,10 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "N-Queen", "N-Queen\N-Queen.vcxproj", "{4F5C7D15-A030-4EC8-8312-1DD2ED7F1A14}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2xn 타일링2", "2xn 타일링2\2xn 타일링2.vcxproj", "{26A899E2-5CD7-4C4B-9542-0101BCEE3E3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "그룹", "그룹", "{ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "미로 탐색", "미로 탐색\미로 탐색.vcxproj", "{802B47D5-4083-4EAD-8782-E90F2DA27763}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -2031,6 +2035,14 @@ Global
 		{26A899E2-5CD7-4C4B-9542-0101BCEE3E3F}.Release|x64.Build.0 = Release|x64
 		{26A899E2-5CD7-4C4B-9542-0101BCEE3E3F}.Release|x86.ActiveCfg = Release|Win32
 		{26A899E2-5CD7-4C4B-9542-0101BCEE3E3F}.Release|x86.Build.0 = Release|Win32
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Debug|x64.ActiveCfg = Debug|x64
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Debug|x64.Build.0 = Debug|x64
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Debug|x86.ActiveCfg = Debug|Win32
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Debug|x86.Build.0 = Debug|Win32
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Release|x64.ActiveCfg = Release|x64
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Release|x64.Build.0 = Release|x64
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Release|x86.ActiveCfg = Release|Win32
+		{802B47D5-4083-4EAD-8782-E90F2DA27763}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2253,6 +2265,7 @@ Global
 		{8BFDF890-C030-4F0B-A08A-8A4064DBE41F} = {01C961F1-4705-4928-8087-677C9C89F7CF}
 		{4F5C7D15-A030-4EC8-8312-1DD2ED7F1A14} = {01C961F1-4705-4928-8087-677C9C89F7CF}
 		{26A899E2-5CD7-4C4B-9542-0101BCEE3E3F} = {01C961F1-4705-4928-8087-677C9C89F7CF}
+		{802B47D5-4083-4EAD-8782-E90F2DA27763} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
