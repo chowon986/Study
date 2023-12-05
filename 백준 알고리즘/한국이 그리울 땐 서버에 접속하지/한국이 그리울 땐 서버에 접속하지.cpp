@@ -21,10 +21,10 @@ int main()
 		string temp;
 		cin >> temp;
 
-		if (temp.size() >= name.size())
+		if (temp.size() >= name.size() - 1)
 		{
 			string front = temp.substr(0, idx);
-			string end = temp.substr(temp.size() - idx, temp.size());
+			string end = temp.substr(temp.size() - originEnd.size(), temp.size());
 
 			if (originFront == front && originEnd == end)
 				cout << "DA" << '\n';
