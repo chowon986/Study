@@ -27,6 +27,7 @@ int main()
 	while (startIdx < endIdx)
 	{
 		int temp = v[startIdx] + v[endIdx];
+
 		if (temp == m)
 		{
 			++count;
@@ -34,13 +35,9 @@ int main()
 			--endIdx;
 		}
 		else if (temp > m)
-		{
 			--endIdx;
-		}
 		else
-		{
 			++startIdx;
-		}
 	}
 
 	cout << count;
