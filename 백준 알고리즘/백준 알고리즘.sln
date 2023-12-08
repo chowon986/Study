@@ -493,6 +493,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "팰린드롬 만들기", "�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "주몽", "주몽\주몽.vcxproj", "{11C1C638-B33F-4BB9-8CDB-066F4523E088}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "좋은 단어", "좋은 단어\좋은 단어.vcxproj", "{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2213,6 +2215,14 @@ Global
 		{11C1C638-B33F-4BB9-8CDB-066F4523E088}.Release|x64.Build.0 = Release|x64
 		{11C1C638-B33F-4BB9-8CDB-066F4523E088}.Release|x86.ActiveCfg = Release|Win32
 		{11C1C638-B33F-4BB9-8CDB-066F4523E088}.Release|x86.Build.0 = Release|Win32
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Debug|x64.ActiveCfg = Debug|x64
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Debug|x64.Build.0 = Debug|x64
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Debug|x86.ActiveCfg = Debug|Win32
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Debug|x86.Build.0 = Debug|Win32
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Release|x64.ActiveCfg = Release|x64
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Release|x64.Build.0 = Release|x64
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Release|x86.ActiveCfg = Release|Win32
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2453,6 +2463,7 @@ Global
 		{16C7CDB4-BEAA-4E6A-B04E-4CAFF723ABE9} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 		{016BF5A6-BD18-41C7-A18A-D5FA7582F990} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 		{11C1C638-B33F-4BB9-8CDB-066F4523E088} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
+		{B420486E-7DE8-480C-8E23-22A9C2E1E1B8} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
