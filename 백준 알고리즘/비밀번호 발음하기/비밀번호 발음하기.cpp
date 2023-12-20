@@ -15,7 +15,7 @@ int main()
 		int vCount = 0; // 모음
 		int ttlVCount = 0; // 전체 모음 개수
 		int cCount = 0; // 자음
-		bool isChecked = false;
+		bool isAcceptable = true;
 
 		int size = s.size(); // string 크기
 		for (int i = 0; i < size; i++)
@@ -28,19 +28,17 @@ int main()
 				{
 					if (s[i] == s[i - 1])
 					{
-						if(s[i] != 'e' && s[i] != 'o')
+						if (s[i] != 'e' && s[i] != 'o')
 						{
-							cout << '<' << s << '>' << " is not acceptable." << '\n';
-							isChecked = true;
+							isAcceptable = false;
 							break;
 						}
 					}
 				}
 
-				if(vCount >= 3)
+				if (vCount >= 3)
 				{
-					cout << '<' << s << '>' << " is not acceptable." << '\n';
-					isChecked = true;
+					isAcceptable = false;
 					break;
 				}
 				cCount = 0;
@@ -52,15 +50,13 @@ int main()
 				{
 					if (s[i] == s[i - 1])
 					{
-						cout << '<' << s << '>' << " is not acceptable." << '\n';
-						isChecked = true;
+						isAcceptable = false;
 						break;
 					}
 				}
-				if(cCount >= 3)
+				if (cCount >= 3)
 				{
-					cout << '<' << s << '>' << " is not acceptable." << '\n';
-					isChecked = true;
+					isAcceptable = false;
 					break;
 				}
 
@@ -68,16 +64,14 @@ int main()
 			}
 		}
 
-		if (!isChecked)
+
+		if (ttlVCount == 0 || isAcceptable == false)
 		{
-			if (ttlVCount == 0)
-			{
-				cout << '<' << s << '>' << " is not acceptable." << '\n';
-			}
-			else
-			{
-				cout << '<' << s << '>' << " is acceptable." << '\n';
-			}
+			cout << '<' << s << "> is not acceptable.\n";
+		}
+		else
+		{
+			cout << '<' << s << "> is acceptable.\n";
 		}
 	}
 }
