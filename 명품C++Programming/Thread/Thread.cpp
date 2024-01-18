@@ -50,30 +50,54 @@ void Byefunc()
 //	return 0;
 //}
 
+//int main()
+//{
+//	// atomic
+//	// 전부 처리하거나 아무것도 하지 못하게 함
+//	atomic<int> num = 0;
+//	thread tA([&]()
+//		{
+//			for (int i = 0; i < 100000; i++)
+//			{
+//				num++;
+//			}
+//		});
+//
+//	thread tB([&]()
+//		{
+//			for (int i = 0; i < 100000; i++)
+//			{
+//				num--;
+//			}
+//		});
+//
+//
+//	tA.join();
+//	tB.join();
+//
+//	cout << num << endl;
+//}
+
 int main()
 {
-	// atomic
-	// 전부 처리하거나 아무것도 하지 못하게 함
-	atomic<int> num = 0;
-	thread tA([&]()
+	thread tC([&]()
+	{
+		for (int i = 0; i < 10; i++)
 		{
-			for (int i = 0; i < 100000; i++)
-			{
-				num++;
-			}
-		});
+			cout << "안녕하세요" << endl;
+			this_thread::sleep_for(std::chrono::milliseconds(1000));
+		}
+	}
+	);
 
-	thread tB([&]()
-		{
-			for (int i = 0; i < 100000; i++)
-			{
-				num--;
-			}
-		});
+	int cnt = 0;
+	cout << "입력 : ";
+	cin >> cnt;
 
+	cout << cnt;
+	cout << "입력한 값 : " << cnt << endl;
 
-	tA.join();
-	tB.join();
+	tC.join();
 
-	cout << num << endl;
+	return 0;
 }
