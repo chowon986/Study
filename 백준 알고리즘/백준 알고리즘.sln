@@ -531,6 +531,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "스네이크버드", "스�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "카드1", "카드1\카드1.vcxproj", "{F10EACE4-4B86-484A-B36E-F5BC0A5EDC1F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "새로운 문자열", "새로운 문자열\새로운 문자열.vcxproj", "{042A9CEC-B279-4C77-9CB1-8792AD3406B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -2395,6 +2397,14 @@ Global
 		{F10EACE4-4B86-484A-B36E-F5BC0A5EDC1F}.Release|x64.Build.0 = Release|x64
 		{F10EACE4-4B86-484A-B36E-F5BC0A5EDC1F}.Release|x86.ActiveCfg = Release|Win32
 		{F10EACE4-4B86-484A-B36E-F5BC0A5EDC1F}.Release|x86.Build.0 = Release|Win32
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Debug|x64.ActiveCfg = Debug|x64
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Debug|x64.Build.0 = Debug|x64
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Debug|x86.ActiveCfg = Debug|Win32
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Debug|x86.Build.0 = Debug|Win32
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Release|x64.ActiveCfg = Release|x64
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Release|x64.Build.0 = Release|x64
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Release|x86.ActiveCfg = Release|Win32
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -2654,6 +2664,7 @@ Global
 		{A39CD326-EF70-4D92-934F-7AA7ED89D42F} = {92AACFE5-0239-46BA-839F-95E56860188E}
 		{35AE9F4A-DE3D-4835-BCD3-9E5FA863A074} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 		{F10EACE4-4B86-484A-B36E-F5BC0A5EDC1F} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
+		{042A9CEC-B279-4C77-9CB1-8792AD3406B7} = {ADEA9B04-0DF0-408C-B5C4-B4C26E400B49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0D9DB98C-12B8-4FF4-8807-1E3C078585A7}
